@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="loginAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1042.0" prefWidth="1920.0" style="-fx-background-color: #6F706F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.controllers.LoginController">
+   <children>
+      <VBox layoutX="836.0" layoutY="353.0" prefHeight="117.0" prefWidth="289.0" spacing="10.0">
+         <children>
+            <JFXTextField focusColor="#ffce73" promptText="Usuario" style="-fx-prompt-text-fill: a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
+            <JFXPasswordField focusColor="#ffce73" promptText="Contraseña" style="-fx-prompt-text-fill: a3a3a3; -fx-text-fill: ffce73;" unFocusColor="#a3a3a3" />
+            <HBox prefHeight="36.0" prefWidth="246.0" spacing="25.0">
+               <children>
+                  <JFXCheckBox checkedColor="#ffce73" prefHeight="25.0" prefWidth="90.0" text="Recordarme" textFill="WHITE" unCheckedColor="#a3a3a3" />
+                  <JFXButton prefHeight="25.0" prefWidth="131.0" ripplerFill="#ffce73" text="Olvide mi contraseña" textFill="#e8e8e8" underline="true" />
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="960.0" layoutY="485.0" spacing="15.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="736.0" layoutY="661.0" prefHeight="36.0" prefWidth="76.0" ripplerFill="WHITE" style="-fx-background-color: ffce73;" text="Salir" />
+            <JFXButton buttonType="RAISED" layoutX="824.0" layoutY="661.0" prefHeight="36.0" prefWidth="76.0" ripplerFill="WHITE" style="-fx-background-color: ffce73;" text="Ingresar" fx:id="buttonIngresar" onAction="#ingresarPressed" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="216.0" fitWidth="225.0" layoutX="868.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Diseño%20Java/src/resources/fxml/138-1388095_user-login-icon-png-user-assign-icon-png.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,774 @@
+2019-10-04 14:14:26.637  INFO 3600 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 3600 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:14:26.640  INFO 3600 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:14:26.678  WARN 3600 --- [JavaFX Application Thread] ionWarningsApplicationContextInitializer : 
+
+** WARNING ** : Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package.
+
+
+2019-10-04 14:14:39.803  WARN 3600 --- [JavaFX Application Thread] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.utn.frsf.TPDisenio]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class] cannot be opened because it does not exist
+2019-10-04 14:14:39.809  INFO 3600 --- [JavaFX Application Thread] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-04 14:14:39.817 ERROR 3600 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.utn.frsf.TPDisenio]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.utn.frsf.TPDisenio.start(com.utn.frsf.TPDisenio.java:23) [classes/:na]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$162(LauncherImpl.java:863) [jfxrt.jar:na]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$175(PlatformImpl.java:326) ~[jfxrt.jar:na]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$173(PlatformImpl.java:295) ~[jfxrt.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_91]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$174(PlatformImpl.java:294) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:na]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_91]
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:88) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:685) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1011) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:375) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:323) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:191) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 21 common frames omitted
+
+2019-10-04 14:18:53.869  INFO 4708 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 4708 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:18:53.871  INFO 4708 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:18:53.905  WARN 4708 --- [JavaFX Application Thread] ionWarningsApplicationContextInitializer : 
+
+** WARNING ** : Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package.
+
+
+2019-10-04 14:19:05.738  WARN 4708 --- [JavaFX Application Thread] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.utn.frsf.TPDisenio]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class] cannot be opened because it does not exist
+2019-10-04 14:19:05.744  INFO 4708 --- [JavaFX Application Thread] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-04 14:19:05.751 ERROR 4708 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.utn.frsf.TPDisenio]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.utn.frsf.TPDisenio.start(com.utn.frsf.TPDisenio.java:23) [classes/:na]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$162(LauncherImpl.java:863) [jfxrt.jar:na]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$175(PlatformImpl.java:326) ~[jfxrt.jar:na]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$173(PlatformImpl.java:295) ~[jfxrt.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_91]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$174(PlatformImpl.java:294) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:na]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_91]
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:88) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:685) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1011) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:375) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:323) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:191) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 21 common frames omitted
+
+2019-10-04 14:21:02.895  INFO 6128 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 6128 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:21:02.898  INFO 6128 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:21:02.936  WARN 6128 --- [JavaFX Application Thread] ionWarningsApplicationContextInitializer : 
+
+** WARNING ** : Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package.
+
+
+2019-10-04 14:21:15.440  WARN 6128 --- [JavaFX Application Thread] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.utn.frsf.TPDisenio]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class] cannot be opened because it does not exist
+2019-10-04 14:21:15.446  INFO 6128 --- [JavaFX Application Thread] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-04 14:21:15.453 ERROR 6128 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.utn.frsf.TPDisenio]; nested exception is java.io.FileNotFoundException: class path resource [org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at com.utn.frsf.TPDisenio.start(com.utn.frsf.TPDisenio.java:23) [classes/:na]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$162(LauncherImpl.java:863) [jfxrt.jar:na]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$175(PlatformImpl.java:326) ~[jfxrt.jar:na]
+	at com.sun.javafx.application.PlatformImpl.lambda$null$173(PlatformImpl.java:295) ~[jfxrt.jar:na]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_91]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$174(PlatformImpl.java:294) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:na]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:na]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_91]
+Caused by: java.io.FileNotFoundException: class path resource [org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:88) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75) ~[spring-boot-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:685) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1011) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:375) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:323) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:191) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+	... 21 common frames omitted
+
+2019-10-04 14:24:01.272  INFO 2712 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 2712 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:24:01.273  INFO 2712 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:24:01.537  INFO 2712 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:24:01.550  INFO 2712 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 14:24:01.825  INFO 2712 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:24:01.826  WARN 2712 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:24:02.001  INFO 2712 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:24:02.028  INFO 2712 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:24:02.063  INFO 2712 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:24:02.064  INFO 2712 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:24:02.144  INFO 2712 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:24:02.218  INFO 2712 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:24:02.343  INFO 2712 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:24:02.429  INFO 2712 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.478 seconds (JVM running for 2.036)
+2019-10-04 14:24:07.133  INFO 2712 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:24:07.135  INFO 2712 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:24:07.140  INFO 2712 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:25:12.815  INFO 13216 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 13216 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:25:12.817  INFO 13216 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:25:13.068  INFO 13216 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:25:13.083  INFO 13216 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 14:25:13.355  INFO 13216 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:25:13.356  WARN 13216 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:25:13.539  INFO 13216 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:25:13.566  INFO 13216 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:25:13.602  INFO 13216 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:25:13.603  INFO 13216 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:25:13.685  INFO 13216 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:25:13.759  INFO 13216 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:25:13.888  INFO 13216 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:25:13.977  INFO 13216 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.43 seconds (JVM running for 1.955)
+2019-10-04 14:25:21.514  INFO 13216 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:25:21.516  INFO 13216 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:25:21.521  INFO 13216 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:38:55.351  INFO 12724 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 12724 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:38:55.353  INFO 12724 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:38:55.610  INFO 12724 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:38:55.624  INFO 12724 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 14:38:55.894  INFO 12724 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:38:55.895  WARN 12724 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:38:56.082  INFO 12724 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:38:56.110  INFO 12724 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:38:56.149  INFO 12724 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:38:56.150  INFO 12724 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:38:56.231  INFO 12724 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:38:56.307  INFO 12724 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:38:56.433  INFO 12724 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:38:56.523  INFO 12724 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.432 seconds (JVM running for 1.987)
+2019-10-04 14:38:59.882  INFO 12724 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:38:59.885  INFO 12724 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:38:59.892  INFO 12724 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:41:44.302  INFO 12676 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 12676 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:41:44.305  INFO 12676 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:41:44.562  INFO 12676 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:41:44.576  INFO 12676 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-04 14:41:44.845  INFO 12676 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:41:44.846  WARN 12676 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:41:45.026  INFO 12676 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:41:45.052  INFO 12676 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:41:45.088  INFO 12676 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:41:45.089  INFO 12676 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:41:45.168  INFO 12676 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:41:45.244  INFO 12676 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:41:45.369  INFO 12676 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:41:45.458  INFO 12676 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.444 seconds (JVM running for 2.067)
+2019-10-04 14:41:48.820  INFO 12676 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:41:48.824  INFO 12676 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:41:48.829  INFO 12676 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:42:14.299  INFO 1836 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 1836 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:42:14.301  INFO 1836 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:42:14.570  INFO 1836 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:42:14.583  INFO 1836 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 14:42:14.859  INFO 1836 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:42:14.860  WARN 1836 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:42:15.045  INFO 1836 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:42:15.072  INFO 1836 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:42:15.108  INFO 1836 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:42:15.109  INFO 1836 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:42:15.189  INFO 1836 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:42:15.264  INFO 1836 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:42:15.391  INFO 1836 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:42:15.481  INFO 1836 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.458 seconds (JVM running for 2.025)
+2019-10-04 14:42:17.558  INFO 1836 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:42:17.561  INFO 1836 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:42:17.565  INFO 1836 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:42:33.361  INFO 6308 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 6308 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:42:33.363  INFO 6308 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:42:33.611  INFO 6308 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:42:33.625  INFO 6308 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 14:42:33.893  INFO 6308 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:42:33.894  WARN 6308 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:42:34.082  INFO 6308 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:42:34.113  INFO 6308 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:42:34.151  INFO 6308 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:42:34.152  INFO 6308 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:42:34.234  INFO 6308 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:42:34.316  INFO 6308 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:42:34.442  INFO 6308 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:42:34.533  INFO 6308 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.451 seconds (JVM running for 1.98)
+2019-10-04 14:42:36.032  INFO 6308 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:42:36.034  INFO 6308 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:42:36.039  INFO 6308 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:43:09.278  INFO 6000 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 6000 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:43:09.280  INFO 6000 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:43:09.574  INFO 6000 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:43:09.588  INFO 6000 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-04 14:43:09.879  INFO 6000 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:43:09.880  WARN 6000 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:43:10.070  INFO 6000 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:43:10.098  INFO 6000 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:43:10.134  INFO 6000 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:43:10.135  INFO 6000 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:43:10.216  INFO 6000 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:43:10.291  INFO 6000 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:43:10.417  INFO 6000 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:43:10.506  INFO 6000 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.49 seconds (JVM running for 2.051)
+2019-10-04 14:44:49.511  INFO 13208 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 13208 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:44:49.513  INFO 13208 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:44:49.759  INFO 13208 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:44:49.772  INFO 13208 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 14:44:50.051  INFO 13208 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:44:50.052  WARN 13208 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:44:50.234  INFO 13208 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:44:50.259  INFO 13208 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:44:50.295  INFO 13208 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:44:50.296  INFO 13208 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:44:50.378  INFO 13208 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:44:50.452  INFO 13208 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:44:50.578  INFO 13208 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:44:50.667  INFO 13208 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.429 seconds (JVM running for 1.967)
+2019-10-04 14:44:52.826  INFO 13208 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:44:52.828  INFO 13208 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:44:52.832  INFO 13208 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:47:15.696  INFO 6868 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 6868 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:47:15.698  INFO 6868 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:47:15.998  INFO 6868 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:47:16.013  INFO 6868 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-04 14:47:16.302  INFO 6868 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:47:16.303  WARN 6868 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:47:16.493  INFO 6868 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:47:16.521  INFO 6868 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:47:16.556  INFO 6868 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:47:16.557  INFO 6868 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:47:16.639  INFO 6868 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:47:16.715  INFO 6868 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:47:16.842  INFO 6868 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:47:16.934  INFO 6868 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.504 seconds (JVM running for 2.084)
+2019-10-04 14:47:17.104  INFO 6868 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:47:17.108  INFO 6868 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:47:17.114  INFO 6868 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:50:56.652  INFO 7632 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 7632 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:50:56.654  INFO 7632 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:50:56.921  INFO 7632 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:50:56.935  INFO 7632 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 14:50:57.204  INFO 7632 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:50:57.204  WARN 7632 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:50:57.387  INFO 7632 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:50:57.415  INFO 7632 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:50:57.452  INFO 7632 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:50:57.453  INFO 7632 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:50:57.534  INFO 7632 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:50:57.615  INFO 7632 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:50:57.739  INFO 7632 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:50:57.832  INFO 7632 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.476 seconds (JVM running for 2.048)
+2019-10-04 14:51:02.211  INFO 7632 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:51:02.213  INFO 7632 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:51:02.217  INFO 7632 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:51:22.048  INFO 7644 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 7644 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:51:22.051  INFO 7644 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:51:22.318  INFO 7644 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:51:22.332  INFO 7644 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 14:51:22.630  INFO 7644 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:51:22.631  WARN 7644 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:51:22.824  INFO 7644 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:51:22.853  INFO 7644 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:51:22.893  INFO 7644 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:51:22.894  INFO 7644 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:51:22.983  INFO 7644 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:51:23.061  INFO 7644 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:51:23.187  INFO 7644 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:51:23.276  INFO 7644 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.504 seconds (JVM running for 2.047)
+2019-10-04 14:51:26.301  INFO 7644 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:51:26.304  INFO 7644 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:51:26.310  INFO 7644 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:51:57.700  INFO 1344 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 1344 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:51:57.702  INFO 1344 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:51:57.996  INFO 1344 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:51:58.009  INFO 1344 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-04 14:51:58.280  INFO 1344 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:51:58.281  WARN 1344 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:51:58.484  INFO 1344 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:51:58.512  INFO 1344 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:51:58.550  INFO 1344 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:51:58.551  INFO 1344 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:51:58.631  INFO 1344 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:51:58.706  INFO 1344 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:51:58.829  INFO 1344 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:51:58.919  INFO 1344 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.518 seconds (JVM running for 2.089)
+2019-10-04 14:52:06.963  INFO 1344 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:52:06.966  INFO 1344 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:52:06.970  INFO 1344 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:52:17.027  INFO 6996 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 6996 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:52:17.029  INFO 6996 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:52:17.284  INFO 6996 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:52:17.296  INFO 6996 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-04 14:52:17.561  INFO 6996 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:52:17.562  WARN 6996 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:52:17.741  INFO 6996 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:52:17.767  INFO 6996 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:52:17.807  INFO 6996 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:52:17.808  INFO 6996 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:52:17.896  INFO 6996 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:52:17.972  INFO 6996 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:52:18.096  INFO 6996 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:52:18.185  INFO 6996 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.424 seconds (JVM running for 1.952)
+2019-10-04 14:52:20.576  INFO 6996 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:52:20.579  INFO 6996 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:52:20.585  INFO 6996 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:52:34.563  INFO 2160 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 2160 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:52:34.565  INFO 2160 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:52:34.866  INFO 2160 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:52:34.881  INFO 2160 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-04 14:52:35.164  INFO 2160 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:52:35.164  WARN 2160 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:52:35.350  INFO 2160 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:52:35.376  INFO 2160 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:52:35.413  INFO 2160 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:52:35.414  INFO 2160 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:52:35.495  INFO 2160 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:52:35.572  INFO 2160 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:52:35.699  INFO 2160 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:52:35.790  INFO 2160 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.545 seconds (JVM running for 2.095)
+2019-10-04 14:52:45.104  INFO 2160 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:52:45.107  INFO 2160 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:52:45.113  INFO 2160 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:54:34.575  INFO 9536 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 9536 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:54:34.577  INFO 9536 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:54:34.863  INFO 9536 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:54:34.876  INFO 9536 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 14:54:35.146  INFO 9536 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:54:35.147  WARN 9536 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:54:35.340  INFO 9536 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:54:35.367  INFO 9536 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:54:35.403  INFO 9536 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:54:35.404  INFO 9536 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:54:35.484  INFO 9536 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:54:35.560  INFO 9536 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:54:35.685  INFO 9536 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:54:35.783  INFO 9536 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.535 seconds (JVM running for 2.082)
+2019-10-04 14:54:38.932  INFO 9536 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:54:38.935  INFO 9536 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:54:38.941  INFO 9536 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 14:57:23.299  INFO 11168 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 11168 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:57:23.301  INFO 11168 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:57:23.553  INFO 11168 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:57:23.566  INFO 11168 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-04 14:57:23.834  INFO 11168 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:57:23.835  WARN 11168 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:57:24.006  INFO 11168 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:57:24.033  INFO 11168 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:57:24.068  INFO 11168 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:57:24.069  INFO 11168 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:57:24.149  INFO 11168 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:57:24.224  INFO 11168 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:57:24.356  INFO 11168 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:57:24.449  INFO 11168 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.424 seconds (JVM running for 2.021)
+2019-10-04 14:59:29.792  INFO 10212 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 10212 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 14:59:29.795  INFO 10212 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 14:59:30.087  INFO 10212 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 14:59:30.099  INFO 10212 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-04 14:59:30.385  INFO 10212 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 14:59:30.386  WARN 10212 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 14:59:30.566  INFO 10212 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 14:59:30.592  INFO 10212 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 14:59:30.628  INFO 10212 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 14:59:30.629  INFO 10212 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 14:59:30.710  INFO 10212 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 14:59:30.787  INFO 10212 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 14:59:30.912  INFO 10212 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:59:31.003  INFO 10212 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.51 seconds (JVM running for 2.071)
+2019-10-04 14:59:33.894  INFO 10212 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 14:59:33.897  INFO 10212 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 14:59:33.902  INFO 10212 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:00:22.324  INFO 11636 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 11636 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:00:22.326  INFO 11636 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:00:22.594  INFO 11636 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:00:22.610  INFO 11636 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-10-04 15:00:22.890  INFO 11636 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:00:22.891  WARN 11636 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:00:23.071  INFO 11636 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:00:23.100  INFO 11636 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:00:23.139  INFO 11636 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:00:23.140  INFO 11636 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:00:23.228  INFO 11636 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:00:23.307  INFO 11636 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:00:23.431  INFO 11636 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:00:23.530  INFO 11636 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.488 seconds (JVM running for 2.055)
+2019-10-04 15:00:26.538  INFO 11636 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:00:26.543  INFO 11636 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:00:26.549  INFO 11636 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:01:08.619  INFO 12320 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 12320 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:01:08.621  INFO 12320 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:01:08.882  INFO 12320 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:01:08.894  INFO 12320 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-04 15:01:09.163  INFO 12320 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:01:09.164  WARN 12320 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:01:09.343  INFO 12320 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:01:09.370  INFO 12320 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:01:09.405  INFO 12320 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:01:09.406  INFO 12320 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:01:09.487  INFO 12320 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:01:09.562  INFO 12320 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:01:09.689  INFO 12320 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:01:09.776  INFO 12320 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.445 seconds (JVM running for 1.959)
+2019-10-04 15:01:14.356  INFO 12320 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:01:14.358  INFO 12320 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:01:14.362  INFO 12320 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:13:40.368  INFO 12424 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 12424 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:13:40.370  INFO 12424 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:13:40.632  INFO 12424 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:13:40.650  INFO 12424 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-10-04 15:13:40.920  INFO 12424 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:13:40.921  WARN 12424 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:13:41.101  INFO 12424 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:13:41.128  INFO 12424 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:13:41.166  INFO 12424 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:13:41.167  INFO 12424 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:13:41.251  INFO 12424 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:13:41.329  INFO 12424 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:13:41.462  INFO 12424 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:13:41.555  INFO 12424 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.454 seconds (JVM running for 2.007)
+2019-10-04 15:13:41.629  INFO 12424 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:13:41.631  INFO 12424 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:13:41.636  INFO 12424 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:14:34.403  INFO 10464 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 10464 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:14:34.405  INFO 10464 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:14:34.684  INFO 10464 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:14:34.698  INFO 10464 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 15:14:34.972  INFO 10464 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:14:34.973  WARN 10464 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:14:35.152  INFO 10464 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:14:35.179  INFO 10464 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:14:35.216  INFO 10464 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:14:35.217  INFO 10464 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:14:35.299  INFO 10464 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:14:35.375  INFO 10464 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:14:35.500  INFO 10464 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:14:35.590  INFO 10464 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.497 seconds (JVM running for 2.039)
+2019-10-04 15:14:35.668  INFO 10464 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:14:35.670  INFO 10464 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:14:35.674  INFO 10464 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:14:44.839  INFO 2236 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 2236 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:14:44.841  INFO 2236 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:14:45.096  INFO 2236 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:14:45.109  INFO 2236 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 15:14:45.399  INFO 2236 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:14:45.400  WARN 2236 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:14:45.588  INFO 2236 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:14:45.617  INFO 2236 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:14:45.653  INFO 2236 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:14:45.654  INFO 2236 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:14:45.743  INFO 2236 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:14:45.823  INFO 2236 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:14:45.946  INFO 2236 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:14:46.037  INFO 2236 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.487 seconds (JVM running for 2.052)
+2019-10-04 15:14:49.016  INFO 2236 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:14:49.018  INFO 2236 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:14:49.023  INFO 2236 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:15:51.917  INFO 12448 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 12448 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:15:51.919  INFO 12448 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:15:52.223  INFO 12448 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:15:52.239  INFO 12448 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-04 15:15:52.571  INFO 12448 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:15:52.572  WARN 12448 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:15:52.765  INFO 12448 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:15:52.793  INFO 12448 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:15:52.832  INFO 12448 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:15:52.833  INFO 12448 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:15:52.919  INFO 12448 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:15:52.999  INFO 12448 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:15:53.129  INFO 12448 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:15:53.222  INFO 12448 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.57 seconds (JVM running for 2.116)
+2019-10-04 15:16:34.615  INFO 6788 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 6788 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:16:34.617  INFO 6788 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:16:34.893  INFO 6788 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:16:34.906  INFO 6788 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 15:16:35.176  INFO 6788 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:16:35.176  WARN 6788 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:16:35.355  INFO 6788 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:16:35.382  INFO 6788 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:16:35.421  INFO 6788 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:16:35.422  INFO 6788 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:16:35.506  INFO 6788 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:16:35.580  INFO 6788 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:16:35.701  INFO 6788 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:16:35.790  INFO 6788 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.463 seconds (JVM running for 2.039)
+2019-10-04 15:17:13.373  INFO 10592 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 10592 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:17:13.375  INFO 10592 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:17:13.627  INFO 10592 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:17:13.641  INFO 10592 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-04 15:17:13.910  INFO 10592 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:17:13.911  WARN 10592 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:17:14.088  INFO 10592 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:17:14.115  INFO 10592 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:17:14.152  INFO 10592 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:17:14.153  INFO 10592 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:17:14.241  INFO 10592 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:17:14.321  INFO 10592 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:17:14.451  INFO 10592 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:17:14.545  INFO 10592 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.447 seconds (JVM running for 1.983)
+2019-10-04 15:19:03.149  INFO 12072 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 12072 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:19:03.151  INFO 12072 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:19:03.432  INFO 12072 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:19:03.445  INFO 12072 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 15:19:03.719  INFO 12072 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:19:03.719  WARN 12072 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:19:03.900  INFO 12072 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:19:03.926  INFO 12072 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:19:03.962  INFO 12072 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:19:03.963  INFO 12072 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:19:04.043  INFO 12072 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:19:04.119  INFO 12072 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:19:04.248  INFO 12072 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:19:04.339  INFO 12072 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.49 seconds (JVM running for 2.04)
+2019-10-04 15:19:07.030  INFO 12072 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:19:07.032  INFO 12072 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:19:07.038  INFO 12072 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:20:21.997  INFO 12080 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 12080 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:20:21.999  INFO 12080 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:20:22.264  INFO 12080 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:20:22.277  INFO 12080 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 15:20:22.556  INFO 12080 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:20:22.557  WARN 12080 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:20:22.742  INFO 12080 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:20:22.770  INFO 12080 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:20:22.808  INFO 12080 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:20:22.808  INFO 12080 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:20:22.891  INFO 12080 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:20:22.966  INFO 12080 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:20:23.094  INFO 12080 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:20:23.185  INFO 12080 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.477 seconds (JVM running for 2.018)
+2019-10-04 15:20:23.339  INFO 12080 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:20:23.342  INFO 12080 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:20:23.345  INFO 12080 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:23:21.100  INFO 12836 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 12836 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:23:21.102  INFO 12836 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:23:21.367  INFO 12836 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:23:21.380  INFO 12836 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 15:23:21.680  INFO 12836 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:23:21.681  WARN 12836 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:23:21.862  INFO 12836 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:23:21.890  INFO 12836 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:23:21.927  INFO 12836 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:23:21.928  INFO 12836 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:23:22.009  INFO 12836 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:23:22.087  INFO 12836 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:23:22.212  INFO 12836 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:23:22.307  INFO 12836 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.512 seconds (JVM running for 2.086)
+2019-10-04 15:23:34.883  INFO 12836 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:23:34.886  INFO 12836 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:23:34.889  INFO 12836 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:23:51.193  INFO 5832 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 5832 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:23:51.195  INFO 5832 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:23:51.460  INFO 5832 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:23:51.474  INFO 5832 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 15:23:51.752  INFO 5832 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:23:51.753  WARN 5832 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:23:51.934  INFO 5832 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:23:51.960  INFO 5832 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:23:51.995  INFO 5832 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:23:51.996  INFO 5832 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:23:52.077  INFO 5832 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:23:52.151  INFO 5832 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:23:52.276  INFO 5832 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:23:52.367  INFO 5832 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.435 seconds (JVM running for 1.97)
+2019-10-04 15:23:54.429  INFO 5832 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:23:54.431  INFO 5832 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:23:54.435  INFO 5832 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:25:13.691  INFO 10576 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 10576 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:25:13.693  INFO 10576 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:25:13.980  INFO 10576 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:25:13.993  INFO 10576 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-04 15:25:14.269  INFO 10576 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:25:14.270  WARN 10576 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:25:14.449  INFO 10576 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:25:14.478  INFO 10576 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:25:14.516  INFO 10576 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:25:14.517  INFO 10576 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:25:14.599  INFO 10576 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:25:14.678  INFO 10576 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:25:14.811  INFO 10576 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:25:14.902  INFO 10576 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.482 seconds (JVM running for 2.022)
+2019-10-04 15:25:34.239  INFO 10576 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:25:34.241  INFO 10576 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:25:34.246  INFO 10576 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:25:42.711  INFO 9992 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 9992 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:25:42.713  INFO 9992 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:25:42.968  INFO 9992 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:25:42.981  INFO 9992 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-04 15:25:43.246  INFO 9992 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:25:43.247  WARN 9992 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:25:43.431  INFO 9992 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:25:43.459  INFO 9992 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:25:43.494  INFO 9992 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:25:43.495  INFO 9992 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:25:43.576  INFO 9992 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:25:43.653  INFO 9992 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:25:43.779  INFO 9992 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:25:43.868  INFO 9992 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.455 seconds (JVM running for 1.989)
+2019-10-04 15:25:44.023  INFO 9992 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:25:44.025  INFO 9992 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:25:44.029  INFO 9992 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:25:50.938  INFO 3324 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 3324 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:25:50.940  INFO 3324 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:25:51.219  INFO 3324 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:25:51.235  INFO 3324 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-04 15:25:51.518  INFO 3324 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:25:51.519  WARN 3324 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:25:51.698  INFO 3324 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:25:51.724  INFO 3324 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:25:51.762  INFO 3324 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:25:51.763  INFO 3324 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:25:51.845  INFO 3324 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:25:51.920  INFO 3324 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:25:52.044  INFO 3324 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:25:52.134  INFO 3324 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.456 seconds (JVM running for 1.999)
+2019-10-04 15:25:55.112  INFO 3324 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:25:55.115  INFO 3324 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-04 15:25:55.120  INFO 3324 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-04 15:29:34.279  INFO 6012 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Starting application on DESKTOP-4N2RPQ2 with PID 6012 (started by Usuario in D:\Gonzalo\workspace\tpdisenio)
+2019-10-04 15:29:34.281  INFO 6012 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-10-04 15:29:34.581  INFO 6012 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-04 15:29:34.594  INFO 6012 --- [JavaFX Application Thread] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-04 15:29:34.876  INFO 6012 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-04 15:29:34.877  WARN 6012 --- [JavaFX Application Thread] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-04 15:29:35.058  INFO 6012 --- [JavaFX Application Thread] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-04 15:29:35.086  INFO 6012 --- [JavaFX Application Thread] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-04 15:29:35.122  INFO 6012 --- [JavaFX Application Thread] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-10-04 15:29:35.123  INFO 6012 --- [JavaFX Application Thread] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-04 15:29:35.203  INFO 6012 --- [JavaFX Application Thread] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-04 15:29:35.281  INFO 6012 --- [JavaFX Application Thread] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-04 15:29:35.405  INFO 6012 --- [JavaFX Application Thread] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-04 15:29:35.495  INFO 6012 --- [JavaFX Application Thread] o.s.boot.SpringApplication               : Started application in 1.525 seconds (JVM running for 2.093)

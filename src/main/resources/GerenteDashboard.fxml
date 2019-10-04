@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="dashboardAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1042.0" prefWidth="1920.0" style="-fx-background-color: #6F706F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.controllers.DashboardGerenteController">
+   <children>
+      <VBox prefHeight="720.0" prefWidth="162.0" style="-fx-background-color: #6F706F; -fx-border-color: a3a3a3; -fx-border-width: 0 1 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="RIGHT" onAction="#buttonPressed" prefHeight="37.0" prefWidth="161.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Crear Poliza" textFill="WHITE" fx:id="x">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" prefHeight="37.0" prefWidth="161.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Modificar Poliza" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" prefHeight="37.0" prefWidth="197.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Alta Cliente" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" prefHeight="37.0" prefWidth="164.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Baja Cliente" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" prefHeight="37.0" prefWidth="168.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Modificar Cliente" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </VBox>
+      <Pane layoutX="162.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1042.0" prefWidth="1758.0" style="-fx-background-color: #6F706F;">
+         <children>
+            <JFXButton fx:id="salirButton" layoutX="853.0" layoutY="509.0" onAction="#salirButtonPressed" text="Button" />
+         </children></Pane>
+   </children>
+</AnchorPane>
