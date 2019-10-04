@@ -1,4 +1,4 @@
-package com.utn.frsf.controllers;
+package com.utn.frsf.Controllers;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;

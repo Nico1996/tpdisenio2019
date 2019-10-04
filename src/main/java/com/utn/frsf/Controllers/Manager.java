@@ -1,6 +1,5 @@
-package com.utn.frsf.controllers;
+package com.utn.frsf.Controllers;
 
-import javafx.scene.layout.AnchorPane;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.utn.frsf.controllers;
+package com.utn.frsf.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,6 +16,7 @@ public class MainController implements Initializable {
     private DashboardGerenteController dbGerenteController;
     @Autowired
     private LoginController loginController;
+
 
     @FXML private AnchorPane dbGerenteAP;
     @FXML private AnchorPane loginAP;

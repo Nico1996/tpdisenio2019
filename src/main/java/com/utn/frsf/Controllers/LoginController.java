@@ -1,8 +1,9 @@
-package com.utn.frsf.controllers;
+package com.utn.frsf.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.net.URL;
@@ -23,8 +24,8 @@ public class LoginController implements Initializable {
 
     @FXML
     public void ingresarPressed(){
-        this.loginAP.setVisible(false);
-        this.mainController.verdb();
+        /*this.loginAP.setVisible(false);
+        this.mainController.verdb();*/
     }
 
     public void injectMainController(MainController m){

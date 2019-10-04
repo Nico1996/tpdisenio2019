@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="loginAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1042.0" prefWidth="1920.0" style="-fx-background-color: #6F706F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.controllers.LoginController">
+<AnchorPane fx:id="loginAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1042.0" prefWidth="1920.0" style="-fx-background-color: #6F706F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.LoginController">
    <children>
       <VBox layoutX="836.0" layoutY="353.0" prefHeight="117.0" prefWidth="289.0" spacing="10.0">
          <children>
@@ -32,7 +32,7 @@
       </HBox>
       <ImageView fitHeight="216.0" fitWidth="225.0" layoutX="868.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Diseño%20Java/src/resources/fxml/138-1388095_user-login-icon-png-user-assign-icon-png.png" />
+            <Image url="images/login.png" />
          </image>
       </ImageView>
    </children>
