@@ -17,6 +17,16 @@ public class User implements Serializable {
     public User() {
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "user_id=" + user_id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", tipo='" + tipo + '\'' +
+                '}';
+    }
+
     public long getUser_id() {
         return user_id;
     }

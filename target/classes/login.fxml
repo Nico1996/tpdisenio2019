@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -11,8 +12,8 @@
    <children>
       <VBox layoutX="836.0" layoutY="353.0" prefHeight="117.0" prefWidth="289.0" spacing="10.0">
          <children>
-            <JFXTextField focusColor="#ffce73" promptText="Usuario" style="-fx-prompt-text-fill: a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
-            <JFXPasswordField focusColor="#ffce73" promptText="Contraseña" style="-fx-prompt-text-fill: a3a3a3; -fx-text-fill: ffce73;" unFocusColor="#a3a3a3" />
+            <JFXTextField fx:id="userTextfield" focusColor="#ffce73" promptText="Usuario" style="-fx-prompt-text-fill: a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
+            <JFXPasswordField fx:id="userPwField" focusColor="#ffce73" promptText="Contraseña" style="-fx-prompt-text-fill: a3a3a3; -fx-text-fill: ffce73;" unFocusColor="#a3a3a3" />
             <HBox prefHeight="36.0" prefWidth="246.0" spacing="25.0">
                <children>
                   <JFXCheckBox checkedColor="#ffce73" prefHeight="25.0" prefWidth="90.0" text="Recordarme" textFill="WHITE" unCheckedColor="#a3a3a3" />
@@ -24,10 +25,10 @@
             </HBox>
          </children>
       </VBox>
-      <HBox layoutX="960.0" layoutY="485.0" spacing="15.0">
+      <HBox layoutX="960.0" layoutY="497.0" spacing="15.0">
          <children>
             <JFXButton buttonType="RAISED" layoutX="736.0" layoutY="661.0" prefHeight="36.0" prefWidth="76.0" ripplerFill="WHITE" style="-fx-background-color: ffce73;" text="Salir" />
-            <JFXButton buttonType="RAISED" layoutX="824.0" layoutY="661.0" prefHeight="36.0" prefWidth="76.0" ripplerFill="WHITE" style="-fx-background-color: ffce73;" text="Ingresar" fx:id="buttonIngresar" onAction="#ingresarPressed" />
+            <JFXButton fx:id="buttonIngresar" buttonType="RAISED" layoutX="824.0" layoutY="661.0" onAction="#ingresarPressed" prefHeight="36.0" prefWidth="76.0" ripplerFill="WHITE" style="-fx-background-color: ffce73;" text="Ingresar" />
          </children>
       </HBox>
       <ImageView fitHeight="216.0" fitWidth="225.0" layoutX="868.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
@@ -35,5 +36,10 @@
             <Image url="images/login.png" />
          </image>
       </ImageView>
+      <Label fx:id="errorLabel" layoutX="918.0" layoutY="470.0" text="Error al ingresar usuario y/o contraseña" textFill="RED" visible="false">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
