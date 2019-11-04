@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.effect.*?>
 <?import com.jfoenix.controls.*?>
@@ -9,32 +10,94 @@
 
 <AnchorPane fx:id="dashboardAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1042.0" prefWidth="1920.0" style="-fx-background-color: #6F706F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.DashboardGerenteController">
    <children>
-      <VBox prefHeight="720.0" prefWidth="162.0" style="-fx-background-color: #6F706F; -fx-border-color: a3a3a3; -fx-border-width: 0 1 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="BASELINE_RIGHT" layoutY="991.0" prefHeight="51.0" prefWidth="233.0" spacing="10.0">
          <children>
-            <JFXButton buttonType="RAISED" contentDisplay="RIGHT" onAction="#buttonPressed" prefHeight="37.0" prefWidth="161.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Crear Poliza" textFill="WHITE" fx:id="x">
+            <JFXButton prefHeight="51.0" prefWidth="119.0" text="Salir" />
+            <JFXButton prefHeight="51.0" prefWidth="136.0" text="Cambiar Usuario" />
+         </children>
+      </HBox>
+      <VBox prefHeight="992.0" prefWidth="234.0" style="-fx-background-color: #6F706F; -fx-border-color: a3a3a3; -fx-border-width: 0 1 0 0;" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="71.0" prefWidth="233.0" style="-fx-background-color: #404040;" text="Panel" textFill="#787878">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#buttonPressed" prefHeight="37.0" prefWidth="255.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Crear Poliza" textFill="WHITE" fx:id="x">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
             </JFXButton>
-            <JFXButton buttonType="RAISED" prefHeight="37.0" prefWidth="161.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Modificar Poliza" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="37.0" prefWidth="251.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Modificar Poliza" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
             </JFXButton>
-            <JFXButton buttonType="RAISED" prefHeight="37.0" prefWidth="197.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Alta Cliente" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="37.0" prefWidth="270.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Alta Cliente" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
             </JFXButton>
-            <JFXButton buttonType="RAISED" prefHeight="37.0" prefWidth="164.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Baja Cliente" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="37.0" prefWidth="268.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Baja Cliente" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
             </JFXButton>
-            <JFXButton buttonType="RAISED" prefHeight="37.0" prefWidth="168.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Modificar Cliente" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="38.0" prefWidth="247.0" ripplerFill="#00ff2f" style="-fx-border-color: a3a3a3; -fx-border-width: 0 0 1 0;" text="Modificar Cliente" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
             </JFXButton>
          </children>
          <opaqueInsets>
@@ -44,9 +107,22 @@
             <Insets bottom="5.0" />
          </padding>
       </VBox>
-      <Pane layoutX="162.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1042.0" prefWidth="1758.0" style="-fx-background-color: #6F706F;">
+      <AnchorPane layoutX="248.0" prefHeight="1042.0" prefWidth="1689.0" style="-fx-background-color: #787878;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
          <children>
-            <JFXButton fx:id="salirButton" layoutX="853.0" layoutY="509.0" onAction="#salirButtonPressed" text="Button" />
-         </children></Pane>
+            <AnchorPane layoutX="7.0" prefHeight="71.0" prefWidth="200.0" style="-fx-background-color: #6F706F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label layoutX="6.0" prefHeight="71.0" prefWidth="167.0" style="-fx-background-color: #6F706F;" text="Crear Poliza" textFill="#404040">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="salirButton" layoutX="20.0" layoutY="81.0" onAction="#salirButtonPressed" text="unlog" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

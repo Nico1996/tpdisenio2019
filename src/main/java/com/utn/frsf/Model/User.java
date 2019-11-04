@@ -1,5 +1,7 @@
 package com.utn.frsf.Model;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+
 import javax.persistence.*;
 import java.io.Serializable;
 

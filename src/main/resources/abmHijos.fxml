@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="495.0" style="-fx-border-color: #cccccc;" visible="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="87.0" layoutY="299.0" visible="false">
+         <children>
+            <AnchorPane layoutY="3.0" prefHeight="138.0" prefWidth="141.0">
+               <children>
+                  <Label alignment="BASELINE_RIGHT" text="Fecha de Nacimiento: " AnchorPane.rightAnchor="0.0" />
+                  <Label alignment="BASELINE_RIGHT" layoutX="105.0" layoutY="38.0" text="Sexo: " AnchorPane.rightAnchor="0.0" />
+                  <Label alignment="BASELINE_RIGHT" layoutX="71.0" layoutY="84.0" text="Estado Civil: " AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="148.0" prefHeight="158.0" prefWidth="174.0">
+               <children>
+                  <DatePicker layoutY="1.0" />
+                  <JFXComboBox layoutY="83.0" prefHeight="25.0" prefWidth="174.0" promptText="asd" />
+                  <JFXComboBox layoutY="37.0" prefHeight="25.0" prefWidth="174.0" promptText="asd" />
+                  <JFXButton layoutX="90.0" layoutY="133.0" prefHeight="25.0" prefWidth="84.0" text="Aceptar" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="159.0" layoutY="250.0" spacing="10.0">
+         <children>
+            <JFXButton layoutX="230.0" layoutY="14.0" prefHeight="25.0" prefWidth="84.0" text="Agregar Hijo" />
+            <JFXButton layoutX="240.0" layoutY="24.0" prefHeight="25.0" prefWidth="84.0" text="Modificar" />
+         </children>
+      </HBox>
+      <TableView layoutX="84.0" layoutY="31.0" prefHeight="200.0" prefWidth="328.0">
+        <columns>
+          <TableColumn prefWidth="144.0" text="Fecha de Nacimiento" />
+          <TableColumn prefWidth="94.0" text="Sexo" />
+            <TableColumn prefWidth="88.0" text="Edad" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
