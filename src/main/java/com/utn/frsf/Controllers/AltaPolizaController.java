@@ -31,7 +31,6 @@ public class AltaPolizaController {
         FXMLLoader loader = new FXMLLoader(TPDisenio.class.getResource("/confrimacionPolizaPopout.fxml"));
         Scene scene = new Scene (loader.load());
         Stage popoutStage = new Stage();
-        //this.altaPolizaAnchorPane.setDisable(true);
         dashboardProdSegurosController.disableDashboard();
         popoutStage.initStyle(StageStyle.UNDECORATED);
         popoutStage.setAlwaysOnTop(true);

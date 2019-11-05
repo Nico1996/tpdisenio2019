@@ -12,9 +12,17 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long user_id;
 
+    @OneToOne
+    @JoinColumn(name = "gilada_id")
+    private Gilada gilada;
+
     private String username;
     private String password;
     private String tipo;
+
+    public Gilada getGilada() {
+        return gilada;
+    }
 
     public User() {
     }

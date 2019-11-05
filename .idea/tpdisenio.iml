@@ -4,11 +4,13 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="a.xml" value="8df6bc59-1ec5-404d-bc7f-7cf6e00d622f" />
           <unit-entry name="sessionfactory.xml" value="8df6bc59-1ec5-404d-bc7f-7cf6e00d622f" />
+          <unit-entry name="sessionfactory2.xml" value="8df6bc59-1ec5-404d-bc7f-7cf6e00d622f" />
         </datasource-map>
         <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/images/sessionfactory.xml" />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/sessionfactory.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/sessionfactory2.xml" />
       </configuration>
     </facet>
   </component>
