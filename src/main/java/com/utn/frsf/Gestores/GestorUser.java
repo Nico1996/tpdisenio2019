@@ -25,7 +25,7 @@ public class GestorUser {
 
     public boolean existsUserByUsernameAndPassword(String username, String password){
         User user = userDAO.findClientByUsernameAndPassword(username,password);
-        System.out.println(user.getGilada().getAsd().toString());
+        System.out.println(user.toString());
         if(user==null){
             return false;
         }

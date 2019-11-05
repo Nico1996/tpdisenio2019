@@ -1,4 +1,6 @@
-package com.utn.frsf.Enums;
+package com.utn.frsf.Model;
+
+import com.utn.frsf.Enums.*;
 
 import javax.persistence.*;
 

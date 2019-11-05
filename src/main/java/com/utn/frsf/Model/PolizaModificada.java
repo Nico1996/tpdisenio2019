@@ -30,13 +30,14 @@ public class PolizaModificada {
     @Column(name="fecha_finVigencia",nullable = false)
     private   Date fecha_finVigencia;
 
-    @OneToOne
-    @JoinColumn(name = "fk_medidasSegModif")
-    private MedidasDeSeguridadModif medidasDeSeguridadModifs;
+    @OneToMany
+    private List<MedidasDeSeguridadModif> medidasDeSeguridadModifs;
+
+    @OneToMany
+    private List<HijoModificado> hijoModificados;
 
     @OneToOne
-    @JoinColumn(name="fk_hijoModif")
-    private HijoModificado hijoModificados;
+    private TipoCoberturaModif tipoCoberturaModif;
 
     @ManyToOne
     @JoinColumn(name = "fk_poliza")

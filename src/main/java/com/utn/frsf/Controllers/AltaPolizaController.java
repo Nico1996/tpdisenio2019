@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import sun.plugin.javascript.navig.Anchor;
 
 import java.io.IOException;
 
@@ -22,6 +23,21 @@ public class AltaPolizaController {
 
     @FXML
     private JFXButton confirmarAltaPolizaButton;
+
+    @FXML
+    private JFXButton buscarClienteButton;
+
+    @FXML
+    private JFXButton administrarHijosButton;
+
+    @FXML
+    private AnchorPane buscarClienteAnchorPane;
+
+    @FXML
+    private AnchorPane administrarHijosAnchorPane;
+
+
+
 
     @Autowired
     private DashboardProdSegurosController dashboardProdSegurosController;
@@ -42,4 +58,20 @@ public class AltaPolizaController {
         this.altaPolizaAnchorPane.setVisible(true);
     }
 
+
+    @FXML
+    public void buscarClienteButtonPressed(){
+        if(buscarClienteAnchorPane.isVisible())
+              buscarClienteAnchorPane.setVisible(false);
+        else //if(!administrarHijosAnchorPane.isVisible())
+                    buscarClienteAnchorPane.setVisible(true);
+    }
+
+    @FXML
+    public void administrarHijosButtonPressed(){
+
+        if(administrarHijosAnchorPane.isVisible())
+            administrarHijosAnchorPane.setVisible(false);
+        else administrarHijosAnchorPane.setVisible(true);
+    }
 }

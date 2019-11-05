@@ -17,4 +17,8 @@ public class MedidasDeSeguridadModif {
     @Column(name = "fact_medidaSeguridad",nullable = false)
     private  Float fact_medidaSeguridad;
 
+    @ManyToOne
+    @JoinColumn(name="fk_polizaModif")
+    PolizaModificada polizaModificada;
+
 }

@@ -19,4 +19,7 @@ public class Localidad {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_provincia")
     private Provincia provincia;
+
+    @Column(name = "factor_localidad")
+    private Float factor_localidad;
 }
