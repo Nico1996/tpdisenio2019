@@ -64,6 +64,17 @@ public class Poliza {
     @OneToMany
     private List<PolizaModificada> polizaModificada;
 
+    @ManyToOne
+    @JoinColumn(name = "fk_ajustesPorKm")
+    private AjustesPorKM ajustesPorKM;
+
+    @ManyToOne
+    @JoinColumn(name="fk_siniestro")
+    private SiniestrosFC siniestrosFC;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_factor_caracteristica")
+    private FactoresCaracteristicas factoresCaracteristicas;
 
 
 }

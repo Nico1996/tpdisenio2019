@@ -20,4 +20,8 @@ public class TipoCoberturaModif {
     @Column(name = "fact_caract_tipo_cob",nullable = false)
     private Float fact_caract_tipo_cob;
 
+    @ManyToOne
+    @JoinColumn(name = "fk_polizaModif")
+    private PolizaModificada polizaModificada;
+
 }

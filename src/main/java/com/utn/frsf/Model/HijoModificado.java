@@ -30,4 +30,8 @@ public class HijoModificado {
 
     @Column(name = "fecha_fin_vigencia",nullable = false)
     private Date fecha_fin_vigencia;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_polizaModif")
+    PolizaModificada polizaModificada;
 }

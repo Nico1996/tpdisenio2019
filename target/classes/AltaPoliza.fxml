@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="altaPolizaAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0" prefWidth="1630.0" visible="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.AltaPolizaController">
+<AnchorPane fx:id="altaPolizaAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0" prefWidth="1630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.AltaPolizaController">
    <children>
       <HBox layoutX="374.0" layoutY="4.0" prefHeight="51.0" prefWidth="503.0" style="-fx-border-color: #cccccc;" visible="false" AnchorPane.topAnchor="0.0">
          <children>
@@ -180,12 +180,12 @@
                </children>
             </AnchorPane>
             <JFXButton layoutX="226.0" layoutY="336.0" style="-fx-border-color: #cccccc;" text="Confirmar" visible="false" />
-            <JFXButton layoutX="123.0" layoutY="45.0" style="-fx-border-color: #cccccc;" text="Buscar Cliente">
+            <JFXButton fx:id="buscarClienteButton" layoutX="123.0" layoutY="45.0" onAction="#buscarClienteButtonPressed" style="-fx-border-color: #cccccc;" text="Buscar Cliente">
                <font>
                   <Font size="13.5" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="115.0" layoutY="381.0" style="-fx-border-color: #cccccc;" text="Administrar hijos">
+            <JFXButton fx:id="administrarHijosButton" layoutX="115.0" layoutY="381.0" onAction="#administrarHijosButtonPressed" style="-fx-border-color: #cccccc;" text="Administrar hijos">
                <font>
                   <Font size="13.5" />
                </font>
@@ -319,7 +319,7 @@
             <DatePicker layoutX="143.0" layoutY="100.0" prefHeight="25.0" prefWidth="176.0" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="1070.0" layoutY="51.0" prefHeight="728.0" prefWidth="543.0">
+      <AnchorPane layoutX="1070.0" layoutY="51.0" prefHeight="728.0" prefWidth="543.0" visible="false">
          <children>
             <fx:include source="abmHijos.fxml" />
             <fx:include source="buscarCliente.fxml" />
@@ -331,5 +331,12 @@
             <JFXButton fx:id="confirmarAltaPolizaButton" onAction="#confirmarAltaPolizaButtonPressed" text="Confirmar" />
          </children>
       </HBox>
+      <JFXToggleButton layoutX="231.0" layoutY="819.0" />
+      <VBox alignment="TOP_CENTER" layoutX="1060.0" layoutY="51.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <fx:include source="abmHijos.fxml" />
+            <fx:include source="buscarCliente.fxml" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
