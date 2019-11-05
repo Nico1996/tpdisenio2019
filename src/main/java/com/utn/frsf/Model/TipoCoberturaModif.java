@@ -1,16 +1,15 @@
 package com.utn.frsf.Model;
 
-import com.utn.frsf.Enums.TipoCoberturaEnum;
-
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
-@Table(name = "tipo_cobertura")
-public class TipoCobertura {
+@Table(name = "tipo_cobertura_modif")
+public class TipoCoberturaModif {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id_cobertura")
-    private Integer id_cobertura;
+    @Column(name = "id_cobertura_modif")
+    private Integer id_cobertura_modif;
 
     @Column(name= "nombre_cobertura",nullable = false)
     private String tipoCobertura;

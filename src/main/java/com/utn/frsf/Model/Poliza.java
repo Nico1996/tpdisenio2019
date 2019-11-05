@@ -5,6 +5,7 @@ import com.utn.frsf.Enums.FormaPago;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
 
 @Entity
 @Table(name="poliza")
@@ -59,6 +60,9 @@ public class Poliza {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_cobertura")
     TipoCobertura tipoCobertura;
+
+    @OneToMany
+    private List<PolizaModificada> polizaModificada;
 
 
 
