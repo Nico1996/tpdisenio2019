@@ -12,11 +12,11 @@
          <children>
             <TableView fx:id="tablaClientes" layoutX="11.0" layoutY="7.0" prefHeight="200.0" prefWidth="440.0" style="-fx-background-color: a3a3a3; -fx-border-color: ffce73; -fx-border-width: 0 1 1 1;">
               <columns>
-                <TableColumn prefWidth="75.0" text="Nº Cliente" />
-                <TableColumn prefWidth="75.0" style="-fx-row-color: red;" text="Apellido" />
-                  <TableColumn prefWidth="75.0" text="Nombre" />
-                  <TableColumn prefWidth="118.0" text="Tipo Documento" />
-                  <TableColumn prefWidth="96.0" text="Nº Documento" />
+                <TableColumn fx:id="numClienteColumn" prefWidth="75.0" text="Nº Cliente" />
+                <TableColumn fx:id="apellidoColumn" prefWidth="75.0" style="-fx-row-color: red;" text="Apellido" />
+                  <TableColumn fx:id="nombreColumn" prefWidth="90.0" text="Nombre" />
+                  <TableColumn fx:id="tipoDocColumn" prefWidth="100.0" text="Tipo Documento" />
+                  <TableColumn fx:id="numDocColumn" prefWidth="99.0" text="Nº Documento" />
               </columns>
             </TableView>
             <JFXButton fx:id="seleccionarClienteButton" layoutX="368.0" layoutY="225.0" onAction="#seleccionarButtonPressed" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: ffce73;" text="Seleccionar" />
