@@ -2,58 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbd33ad-723c-440e-9cea-5850fde2a6a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AltaPolizaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AltaPolizaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/DashboardGerenteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/DashboardProdSegurosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/DashboardProdSegurosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Enums/TipoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Enums/TipoUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Localidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Localidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Marca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Marca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Modelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Poliza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Poliza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/PolizaModificada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/PolizaModificada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Provincia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Provincia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/TipoCoberturaModif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/TipoCoberturaModif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/TPDisenio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/TPDisenio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AltaPoliza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/AltaPoliza.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ConfrimacionPolizaPopout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/ConfrimacionPolizaPopout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DashboardProdSeguros.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/DashboardProdSeguros.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/GerenteDashboard.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/PanelProdSeguros.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/PanelProdSeguros.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/VboxProdSeguros.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/VboxProdSeguros.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WorkspaceProdSeguros.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/WorkspaceProdSeguros.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/abmHijos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/abmHijos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/buscarCliente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/buscarCliente.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AltaPoliza.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ConfrimacionPolizaPopout.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DashboardProdSeguros.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GerenteDashboard.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PanelProdSeguros.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/VboxProdSeguros.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WorkspaceProdSeguros.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/abmHijos.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/buscarCliente.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Enums/TipoUsuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Enums/TipoUsuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Localidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Localidad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Poliza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Poliza.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/PolizaModificada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/PolizaModificada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Provincia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Provincia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/TipoCoberturaModif.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/TipoCoberturaModif.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/TPDisenio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/TPDisenio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorPoliza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorPoliza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/TipoCobertura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/TipoCobertura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/AltaPoliza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/AltaPoliza.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/ConfrimacionPolizaPopout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/confirmacionPolizaPopUP.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/abmHijos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/abmHijos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/buscarCliente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/buscarCliente.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AltaPolizaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AltaPolizaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/DashboardGerenteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxmls/AltaPoliza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/AltaPoliza.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxmls/ConfrimacionPolizaPopout.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxmls/abmHijos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/abmHijos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxmls/buscarCliente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/buscarCliente.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +70,7 @@
         <item name="sql10310926@sql10.freemysqlhosting.net" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="sql10310926: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="localidad: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="vehiculo: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -119,8 +81,8 @@
         <option value="package-info" />
         <option value="Enum" />
         <option value="Tag Library Descriptor" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -235,6 +197,7 @@
       <workItem from="1572937866640" duration="85000" />
       <workItem from="1572979678114" duration="9979000" />
       <workItem from="1572997123320" duration="20039000" />
+      <workItem from="1573057921909" duration="5992000" />
     </task>
     <servers />
   </component>

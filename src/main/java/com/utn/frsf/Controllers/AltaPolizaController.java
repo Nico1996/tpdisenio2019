@@ -2,6 +2,9 @@ package com.utn.frsf.Controllers;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
+import com.utn.frsf.DTO.ClienteDTO;
+import com.utn.frsf.DTO.VehiculoDTO;
+import com.utn.frsf.Enums.FormaPago;
 import com.utn.frsf.Enums.TipoDocumento;
 import com.utn.frsf.Gestores.GestorLocalidad;
 import com.utn.frsf.Gestores.GestorPoliza;
@@ -19,10 +22,17 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 @Component
 public class AltaPolizaController implements Initializable {
+
+    private List<Hijo> hijosDTO;
+
+    private ClienteDTO clienteDTO;
+
+    private VehiculoDTO vehiculoDTO;
 
     @FXML
     private AnchorPane altaPolizaAnchorPane;
@@ -37,29 +47,30 @@ public class AltaPolizaController implements Initializable {
     private JFXButton administrarHijosButton;
 
     @FXML
-    private AnchorPane buscarClienteAnchorPane;
-
-    @FXML
-    private AnchorPane administrarHijosAnchorPane;
-
-    @FXML
     private JFXComboBox<Provincia> provinciaComboBox;
 
     @FXML JFXComboBox<Localidad> localidadComboBox;
 
     @FXML
-    JFXComboBox<TipoDocumento> dniComboBox;
+    private JFXComboBox<TipoDocumento> dniComboBox;
 
     @FXML
-    JFXComboBox<TipoCobertura> tipoCoberturaComboBox;
+    private JFXComboBox<TipoCobertura> tipoCoberturaComboBox;
 
     @FXML
-    JFXComboBox<Marca> marcaComboBox;
+    private JFXComboBox<Marca> marcaComboBox;
 
     @FXML
-    JFXComboBox<Modelo> modeloComboBox;
+    private JFXComboBox<Modelo> modeloComboBox;
 
+    @FXML
+    private JFXComboBox<FormaPago> formaDePagoComboBox;
 
+    @Autowired
+    private BuscarClienteController buscarClienteController;
+
+    @Autowired
+    private AbmHijosController abmHijosController;
 
 
     @Autowired
@@ -73,7 +84,7 @@ public class AltaPolizaController implements Initializable {
 
     @FXML
     public void confirmarAltaPolizaButtonPressed() throws IOException {
-        FXMLLoader loader = new FXMLLoader(TPDisenio.class.getResource("/fxmls/ConfrimacionPolizaPopout.fxml"));
+        FXMLLoader loader = new FXMLLoader(TPDisenio.class.getResource("/fxmls/confirmacionPolizaPopUP.fxml"));
         Scene scene = new Scene (loader.load());
         Stage popoutStage = new Stage();
         dashboardProdSegurosController.disableDashboard();
@@ -93,17 +104,19 @@ public class AltaPolizaController implements Initializable {
 
     @FXML
     public void buscarClienteButtonPressed(){
-        if(buscarClienteAnchorPane.isVisible())
-              buscarClienteAnchorPane.setVisible(false);
-        else buscarClienteAnchorPane.setVisible(true);
+        if(this.buscarClienteController.isVisible()){
+            this.buscarClienteController.setVisible(false);
+        }
+        else  this.buscarClienteController.setVisible(true);
     }
 
     @FXML
     public void administrarHijosButtonPressed(){
-
-        if(administrarHijosAnchorPane.isVisible())
-            administrarHijosAnchorPane.setVisible(false);
-        else administrarHijosAnchorPane.setVisible(true);
+        if(this.abmHijosController.isVisible()){
+            this.abmHijosController.setVisible(false);
+        }
+        else
+            this.abmHijosController.setVisible(true);
     }
 
     @FXML
@@ -127,12 +140,10 @@ public class AltaPolizaController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        if(provinciaComboBox.getItems().isEmpty()) {
             this.provinciaComboBox.getItems().addAll(gestorLocalidad.getProvincias());
             this.dniComboBox.getItems().addAll(TipoDocumento.values());
             this.marcaComboBox.getItems().addAll(gestorPoliza.findAllMarcasVehiculo());
-          //  this.modeloComboBox.getItems().addAll(gestorPoliza.findAllModelosVehiculo());
-
-        }
+            this.tipoCoberturaComboBox.getItems().addAll(gestorPoliza.findAllTiposDeCobertura());
+            this.formaDePagoComboBox.getItems().addAll(FormaPago.values());
     }
 }

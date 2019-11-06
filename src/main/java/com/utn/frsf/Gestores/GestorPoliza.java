@@ -2,10 +2,12 @@ package com.utn.frsf.Gestores;
 
 import com.utn.frsf.DAO.MarcaVehiculoDAO;
 import com.utn.frsf.DAO.ModeloVehiculoDAO;
+import com.utn.frsf.DAO.TipoDeCoberturaDAO;
 import com.utn.frsf.DAO.VehiculoDAO;
 import com.utn.frsf.Model.Localidad;
 import com.utn.frsf.Model.Marca;
 import com.utn.frsf.Model.Modelo;
+import com.utn.frsf.Model.TipoCobertura;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,12 @@ public class GestorPoliza {
     private MarcaVehiculoDAO marcaVehiculoDAO;
     @Autowired
     private ModeloVehiculoDAO modeloVehiculoDAO;
+    @Autowired
+    private TipoDeCoberturaDAO tipoDeCoberturaDAO;
+
+    public List<TipoCobertura> findAllTiposDeCobertura(){
+        return tipoDeCoberturaDAO.findAll();
+    }
 
     public List<Marca> findAllMarcasVehiculo(){
         return marcaVehiculoDAO.findAll();

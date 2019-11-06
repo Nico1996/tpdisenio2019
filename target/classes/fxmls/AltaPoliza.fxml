@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="altaPolizaAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0" prefWidth="1630.0" style="-fx-background-color: #6F706F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.AltaPolizaController">
+<AnchorPane fx:id="altaPolizaAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0" prefWidth="1630.0" style="-fx-background-color: #6F706F; " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.AltaPolizaController">
    <children>
       <HBox layoutX="374.0" layoutY="4.0" prefHeight="51.0" prefWidth="503.0" style="-fx-border-color: #cccccc;" visible="false" AnchorPane.topAnchor="0.0">
          <children>
@@ -112,27 +112,27 @@
          <children>
             <AnchorPane layoutX="128.0" layoutY="92.0" prefHeight="339.0" prefWidth="176.0">
                <children>
-                  <JFXTextField focusColor="#ffce73" layoutX="4.0" layoutY="106.0" promptText="Número de documento *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="4.0">
+                  <JFXTextField fx:id="nroDocumentoTextfield" focusColor="#ffce73" layoutX="4.0" layoutY="106.0" promptText="Número de documento *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="4.0">
                      <font>
                         <Font size="13.5" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#ffce73" layoutX="4.0" layoutY="22.0" promptText="Número de Cliente *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="4.0">
+                  <JFXTextField fx:id="numeroClienteTextfield" focusColor="#ffce73" layoutX="4.0" layoutY="22.0" promptText="Número de Cliente *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="4.0">
                      <font>
                         <Font size="13.5" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#ffce73" layoutX="4.0" layoutY="187.0" prefHeight="30.0" prefWidth="152.0" promptText="Nombre *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="4.0">
+                  <JFXTextField fx:id="nombreTextfield" focusColor="#ffce73" layoutX="4.0" layoutY="187.0" prefHeight="30.0" prefWidth="152.0" promptText="Nombre *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="4.0">
                      <font>
                         <Font size="13.5" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#ffce73" layoutX="4.0" layoutY="145.0" prefHeight="30.0" prefWidth="152.0" promptText="Apellido *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="4.0">
+                  <JFXTextField fx:id="apellidoTextfield" focusColor="#ffce73" layoutX="4.0" layoutY="145.0" prefHeight="30.0" prefWidth="152.0" promptText="Apellido *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="4.0">
                      <font>
                         <Font size="13.5" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField focusColor="#ffce73" layoutX="5.0" layoutY="238.0" prefHeight="30.0" prefWidth="159.0" promptText="Domicilio *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="5.0">
+                  <JFXTextField fx:id="domicilioTextfield" focusColor="#ffce73" layoutX="5.0" layoutY="238.0" prefHeight="30.0" prefWidth="159.0" promptText="Domicilio *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" AnchorPane.leftAnchor="5.0">
                      <font>
                         <Font size="13.5" />
                      </font>
@@ -218,7 +218,7 @@
                   <Label alignment="BASELINE_RIGHT" layoutX="113.0" layoutY="94.0" text="Modelo: " textFill="WHITE" AnchorPane.rightAnchor="0.0">
                      <font>
                         <Font size="13.5" />
-                     </font></Label>
+                    </font></Label>
                   <Label alignment="BASELINE_RIGHT" layoutX="2.0" layoutY="564.0" text="Siniestros en el ultimo año:" textFill="WHITE" AnchorPane.rightAnchor="3.0">
                      <font>
                         <Font size="13.5" />
@@ -240,12 +240,12 @@
             <AnchorPane layoutX="212.0" layoutY="21.0" prefHeight="700.0" prefWidth="311.0">
                <children>
                   <JFXComboBox fx:id="marcaComboBox" focusColor="#ffce73" labelFloat="true" layoutX="3.0" layoutY="51.0" onAction="#marcaComboPressed" prefHeight="25.0" prefWidth="166.0" promptText="Marca *" style="-fx-prompt-text-fill: #a3a3a3;" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
-                  <JFXTextField focusColor="#ffce73" layoutY="281.0" prefHeight="30.0" prefWidth="166.0" promptText="Patente *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
+                  <JFXTextField fx:id="patenteVehiculoTextfield" focusColor="#ffce73" layoutY="281.0" prefHeight="30.0" prefWidth="166.0" promptText="Patente *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
                      <font>
                         <Font size="13.5" />
                      </font></JFXTextField>
                   <JFXComboBox fx:id="modeloComboBox" focusColor="#ffce73" labelFloat="true" layoutY="98.0" prefHeight="25.0" prefWidth="169.0" promptText="Modelo *" style="-fx-prompt-text-fill: #a3a3a3;" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
-                  <JFXTextField focusColor="#ffce73" layoutY="333.0" prefHeight="30.0" prefWidth="166.0" promptText="Kms. por Año *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
+                  <JFXTextField fx:id="kmsPorAñoTextField" focusColor="#ffce73" layoutY="333.0" prefHeight="30.0" prefWidth="166.0" promptText="Kms. por Año *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
                      <font>
                         <Font size="13.5" />
                      </font></JFXTextField>
@@ -257,11 +257,11 @@
                      <font>
                         <Font size="13.5" />
                      </font></JFXRadioButton>
-                  <JFXTextField focusColor="#ffce73" layoutX="1.0" layoutY="187.0" prefHeight="30.0" prefWidth="167.0" promptText="Motor *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
+                  <JFXTextField fx:id="motorVehiculoTextfield" focusColor="#ffce73" layoutX="1.0" layoutY="187.0" prefHeight="30.0" prefWidth="167.0" promptText="Motor *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
                      <font>
                         <Font size="13.5" />
                      </font></JFXTextField>
-                  <JFXTextField focusColor="#ffce73" layoutX="1.0" layoutY="232.0" prefHeight="30.0" prefWidth="166.0" promptText="Chasis *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
+                  <JFXTextField fx:id="chasisVehiculoTextfield" focusColor="#ffce73" layoutX="1.0" layoutY="232.0" prefHeight="30.0" prefWidth="166.0" promptText="Chasis *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
                      <font>
                         <Font size="13.5" />
                      </font></JFXTextField>
@@ -269,15 +269,15 @@
                      <font>
                         <Font size="13.5" />
                      </font></JFXRadioButton>
-                  <JFXTextField editable="false" focusColor="#ffce73" layoutX="2.0" layoutY="613.0" prefHeight="30.0" prefWidth="169.0" promptText="Suma Asegurada" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
+                  <JFXTextField fx:id="sumaAseguradaTextField" editable="false" focusColor="#ffce73" layoutX="2.0" layoutY="613.0" prefHeight="30.0" prefWidth="169.0" promptText="Suma Asegurada" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
                      <font>
                         <Font size="13.5" />
                      </font></JFXTextField>
-                  <JFXTextField focusColor="#ffce73" layoutY="142.0" prefHeight="30.0" prefWidth="168.0" promptText="Año *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
+                  <JFXTextField fx:id="añoVehiculoTextfield" focusColor="#ffce73" layoutY="142.0" prefHeight="30.0" prefWidth="168.0" promptText="Año *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
                      <font>
                         <Font size="13.5" />
                      </font></JFXTextField>
-                  <JFXTextField focusColor="#ffce73" layoutX="2.0" layoutY="566.0" prefHeight="30.0" prefWidth="166.0" promptText="Cantidad de Siniestros *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
+                  <JFXTextField fx:id="siniestrosTextField" focusColor="#ffce73" layoutX="2.0" layoutY="566.0" prefHeight="30.0" prefWidth="166.0" promptText="Cantidad de Siniestros *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3">
                      <font>
                         <Font size="13.5" />
                      </font></JFXTextField>
@@ -287,22 +287,22 @@
                      </font></JFXRadioButton>
                   <JFXComboBox fx:id="provinciaComboBox" focusColor="#ffce73" labelFloat="true" layoutX="3.0" layoutY="8.0" onAction="#provinciaComboPressed" prefHeight="25.0" prefWidth="166.0" promptText="Provincia *" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
                   <JFXComboBox fx:id="localidadComboBox" focusColor="#ffce73" labelFloat="true" layoutX="176.0" layoutY="8.0" prefHeight="25.0" prefWidth="166.0" promptText="Localidad *" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
-                  <JFXCheckBox checkedColor="#ffad12" layoutY="413.0" text="Alarma" textFill="WHITE">
+                  <JFXCheckBox fx:id="alarmaCheckBox" checkedColor="#ffad12" layoutY="413.0" text="Alarma" textFill="WHITE">
                      <font>
                         <Font size="13.5" />
                      </font>
                   </JFXCheckBox>
-                  <JFXCheckBox checkedColor="#ffad12" layoutX="1.0" layoutY="447.0" text="Garage" textFill="WHITE">
+                  <JFXCheckBox fx:id="garageCheckBox" checkedColor="#ffad12" layoutX="1.0" layoutY="447.0" text="Garage" textFill="WHITE">
                      <font>
                         <Font size="13.5" />
                      </font>
                   </JFXCheckBox>
-                  <JFXCheckBox checkedColor="#ffad12" layoutX="1.0" layoutY="482.0" text="Rastreo Satelital" textFill="WHITE">
+                  <JFXCheckBox fx:id="rastreoCheckBox" checkedColor="#ffad12" layoutX="1.0" layoutY="482.0" text="Rastreo Satelital" textFill="WHITE">
                      <font>
                         <Font size="13.5" />
                      </font>
                   </JFXCheckBox>
-                  <JFXCheckBox checkedColor="#ffad12" layoutX="1.0" layoutY="519.0" text="Tuercas Antirrobo" textFill="WHITE">
+                  <JFXCheckBox fx:id="tuercasCheckBox" checkedColor="#ffad12" layoutX="1.0" layoutY="519.0" text="Tuercas Antirrobo" textFill="WHITE">
                      <font>
                         <Font size="13.5" />
                      </font>
@@ -330,8 +330,8 @@
                </children>
             </AnchorPane>
             <JFXComboBox fx:id="tipoCoberturaComboBox" focusColor="#ffce73" labelFloat="true" layoutX="151.0" layoutY="51.0" prefHeight="25.0" prefWidth="166.0" promptText="Tipo de Cobertura" style="-fx-prompt-text-fill: #a3a3a3;" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
-            <DatePicker layoutX="143.0" layoutY="141.0" prefHeight="25.0" prefWidth="176.0" style="-fx-control-inner-background: #a3a3a3; -fx-background-color: ffad12;" />
-            <DatePicker layoutX="143.0" layoutY="100.0" prefHeight="25.0" prefWidth="176.0" style="-fx-control-inner-background: #a3a3a3; -fx-background-color: ffad12;" />
+            <DatePicker fx:id="fechaInicioDatePicker" layoutX="143.0" layoutY="100.0" prefHeight="25.0" prefWidth="176.0" style="-fx-control-inner-background: #a3a3a3; -fx-background-color: ffad12;" />
+            <JFXComboBox fx:id="formaDePagoComboBox" focusColor="#ffce73" labelFloat="true" layoutX="148.0" layoutY="140.0" prefHeight="25.0" prefWidth="166.0" promptText="Forma de pago" style="-fx-prompt-text-fill: #a3a3a3;" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="1070.0" layoutY="51.0" prefHeight="728.0" prefWidth="543.0" visible="false">
@@ -354,8 +354,8 @@
       </HBox>
       <VBox alignment="TOP_CENTER" layoutX="1070.0" layoutY="51.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
          <children>
-            <fx:include source="abmHijos.fxml" />
             <fx:include source="buscarCliente.fxml" />
+            <fx:include source="abmHijos.fxml" />
          </children>
       </VBox>
    </children>
