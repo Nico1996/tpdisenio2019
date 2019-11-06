@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import org.controlsfx.control.tableview2.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="buscarClienteAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="543.0" style="-fx-border-color: ffce73; -fx-background-color: #6F706F; -fx-border-width: 0.35 0.35 0.35 0.35;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.BuscarClienteController">
+   <children>
+      <AnchorPane layoutX="42.0" layoutY="287.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="461.0">
+         <children>
+            <TableView fx:id="tablaClientes" layoutX="11.0" layoutY="7.0" prefHeight="200.0" prefWidth="440.0" style="-fx-background-color: a3a3a3; -fx-border-color: ffce73; -fx-border-width: 0 1 1 1;">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Nº Cliente" />
+                <TableColumn prefWidth="75.0" style="-fx-row-color: red;" text="Apellido" />
+                  <TableColumn prefWidth="75.0" text="Nombre" />
+                  <TableColumn prefWidth="118.0" text="Tipo Documento" />
+                  <TableColumn prefWidth="96.0" text="Nº Documento" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="seleccionarClienteButton" layoutX="368.0" layoutY="225.0" onAction="#seleccionarButtonPressed" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: ffce73;" text="Seleccionar" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="65.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="273.0" prefWidth="414.0">
+         <children>
+            <AnchorPane layoutX="22.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="221.0" prefWidth="158.0" AnchorPane.rightAnchor="234.0">
+               <children>
+                  <Label layoutX="51.0" layoutY="13.0" text="Número de Cliente: " textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="130.0" layoutY="58.0" text="Apellido: " textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="108.0" layoutY="103.0" text="Nombre: " textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="80.0" layoutY="148.0" text="Tipo  de documento: " textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="27.0" layoutY="193.0" text="Número de documento: " textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <VBox layoutX="190.0" layoutY="8.0" prefHeight="215.0" prefWidth="170.0" spacing="20.0">
+               <children>
+                  <JFXTextField fx:id="buscarNroClienteTextfield" focusColor="#ffce73" promptText="Número de Cliente" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
+                  <JFXTextField fx:id="buscarApellidoTextfield" focusColor="#ffce73" promptText="Apellido" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
+                  <JFXTextField fx:id="buscarNombreTextfield" focusColor="#ffce73" promptText="Nombre" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
+                  <JFXComboBox fx:id="buscarTipoDniComboBox" focusColor="#ffce73" labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="Tipo de Documento" style="-fx-prompt-text-fill: #a3a3a3;" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
+                  <JFXTextField fx:id="buscarNroDocumentoTextfield" focusColor="#ffce73" promptText="Número de Documento" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
+               </children>
+            </VBox>
+            <JFXButton fx:id="buscarCliente_buscarButton" layoutX="285.0" layoutY="234.0" onAction="#buscarCliente_buscarButtonPressed" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: ffce73;" text="Buscar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

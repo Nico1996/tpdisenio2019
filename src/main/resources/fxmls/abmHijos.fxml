@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="administrarHijosAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="543.0" style="-fx-background-color: #6F706F; -fx-border-color: ffce73; -fx-border-width: 0.35 0.35 0.35 0.35;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.AbmHijosController">
+   <children>
+      <AnchorPane layoutX="111.0" layoutY="14.0" prefHeight="113.0" prefWidth="322.0">
+         <children>
+            <AnchorPane layoutY="3.0" prefHeight="111.0" prefWidth="141.0">
+               <children>
+                  <Label alignment="BASELINE_RIGHT" text="Fecha de Nacimiento: " textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+                  <Label alignment="BASELINE_RIGHT" layoutX="105.0" layoutY="38.0" text="Sexo: " textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+                  <Label alignment="BASELINE_RIGHT" layoutX="71.0" layoutY="84.0" text="Estado Civil: " textFill="WHITE" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="148.0" prefHeight="111.0" prefWidth="174.0">
+               <children>
+                  <DatePicker fx:id="fechaNacimientoHijoDatePicker" layoutY="1.0" promptText="dd/mm/yyyy *" style="-fx-background-color: ffad12; -fx-control-inner-background: a3a3a3; -fx-prompt-text-fill: a3a3a3;" />
+                  <JFXComboBox fx:id="estadoCivilHijoComboBox" focusColor="#ffce73" labelFloat="true" layoutY="83.0" prefHeight="25.0" prefWidth="174.0" promptText="Estado Civil *" style="-fx-prompt-text-fill: a3a3a3;" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
+                  <JFXComboBox fx:id="sexoHijoComboBox" focusColor="#ffce73" labelFloat="true" layoutX="-1.0" layoutY="37.0" prefHeight="25.0" prefWidth="174.0" promptText="Sexo *" style="-fx-prompt-text-fill: a3a3a3;" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="159.0" layoutY="250.0" spacing="10.0" visible="false">
+         <children>
+            <JFXButton layoutX="230.0" layoutY="14.0" prefHeight="25.0" prefWidth="84.0" text="Agregar Hijo" />
+            <JFXButton layoutX="240.0" layoutY="24.0" prefHeight="25.0" prefWidth="84.0" text="Modificar" />
+         </children>
+      </HBox>
+      <TableView layoutX="108.0" layoutY="193.0" prefHeight="200.0" prefWidth="328.0" style="-fx-background-color: a3a3a3; -fx-border-color: ffad12; -fx-border-width: 0 1 1 1;">
+         <columns>
+            <TableColumn prefWidth="144.0" text="Fecha de Nacimiento" />
+            <TableColumn prefWidth="94.0" text="Sexo" />
+            <TableColumn prefWidth="88.0" text="Edad" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="agregarHijoButton" layoutX="230.0" layoutY="144.0" onAction="#agregarHijoButtonPressed" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: ffce73;" text="Agregar Hijo" />
+   </children>
+</AnchorPane>

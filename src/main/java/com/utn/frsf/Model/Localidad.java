@@ -22,4 +22,9 @@ public class Localidad {
 
     @Column(name = "factor_localidad")
     private Float factor_localidad;
+
+    @Override
+    public String toString() {
+        return nombre_localidad;
+    }
 }

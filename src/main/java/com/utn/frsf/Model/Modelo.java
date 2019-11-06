@@ -19,4 +19,9 @@ public class Modelo {
     @JoinColumn(name="id_marca")
     @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private   Marca marca;
+
+    @Override
+    public String toString() {
+        return nombre_modelo;
+    }
 }

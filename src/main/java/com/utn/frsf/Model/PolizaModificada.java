@@ -31,12 +31,15 @@ public class PolizaModificada {
     private   Date fecha_finVigencia;
 
     @OneToMany
+    @JoinColumn(name = "fk_polizaModif")
     private List<MedidasDeSeguridadModif> medidasDeSeguridadModifs;
 
     @OneToMany
+    @JoinColumn(name = "fk_polizaModif")
     private List<HijoModificado> hijoModificados;
 
     @OneToOne
+    @JoinColumn(name = "fk_tipoCobModif")
     private TipoCoberturaModif tipoCoberturaModif;
 
     @ManyToOne
