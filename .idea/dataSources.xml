@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="tpdisenio2@localhost" uuid="74c92551-f037-404a-b9ac-b56a0a185655">
+    <data-source source="LOCAL" name="MySQL - @localhost" uuid="b4252fd9-b44e-4272-a392-3b296af23448">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/tpdisenio2</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/disenio</jdbc-url>
       <driver-properties>
         <property name="serverTimezone" value="UTC" />
       </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="sql10310926@sql10.freemysqlhosting.net" uuid="e314ecf6-ebba-4daa-a58e-6b9fe7855cba">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://sql10.freemysqlhosting.net:3306/sql10310926</jdbc-url>
     </data-source>
   </component>
 </project>

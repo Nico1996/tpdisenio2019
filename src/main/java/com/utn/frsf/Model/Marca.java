@@ -13,4 +13,24 @@ public class Marca {
     @Column(name = "nombre_marca",nullable = false)
     private  String nombre_marca;
 
+    public Integer getId_marca() {
+        return id_marca;
+    }
+
+    public void setId_marca(Integer id_marca) {
+        this.id_marca = id_marca;
+    }
+
+    public String getNombre_marca() {
+        return nombre_marca;
+    }
+
+    public void setNombre_marca(String nombre_marca) {
+        this.nombre_marca = nombre_marca;
+    }
+
+    @Override
+    public String toString() {
+        return nombre_marca;
+    }
 }

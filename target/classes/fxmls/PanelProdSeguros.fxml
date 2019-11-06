@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="panelDashboardProdSeguro" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0" prefWidth="320.0" spacing="2.0" style="-fx-background-color: #6F706F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.DashboardProdSegurosController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="56.0" prefWidth="304.0" text="Panel" textAlignment="CENTER" textFill="#ebebeb">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <JFXButton fx:id="altaPolizaButton" alignment="BASELINE_LEFT" cache="true" onAction="#altaPolizaButtonPressed" prefHeight="58.0" prefWidth="320.0" ripplerFill="#ffad14" style="-fx-border-width: 0 0 0 3; -fx-border-color: ffad12;" text="Alta Poliza" textFill="#ebebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" prefHeight="58.0" prefWidth="431.0" style="-fx-border-color: ffad12; -fx-border-width: 0 0 0 3;" text="Consultar Poliza" textFill="#ebebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <ripplerFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.12380952380952381">
+               <stops>
+                  <Stop color="#ffad1496" />
+                  <Stop color="#fcab1496" offset="0.007662835249042145" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" prefHeight="58.0" prefWidth="364.0" style="-fx-border-color: ffad12; -fx-border-width: 0 0 0 3;" text="Modificar Poliza" textFill="#ebebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <ripplerFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.12380952380952381">
+               <stops>
+                  <Stop color="#ffad1496" />
+                  <Stop color="#fcab1496" offset="0.007662835249042145" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" prefHeight="58.0" prefWidth="383.0" style="-fx-border-color: ffad12; -fx-border-width: 0 0 0 3;" text="Alta Cliente" textFill="#ebebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <ripplerFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.12380952380952381">
+               <stops>
+                  <Stop color="#ffad1496" />
+                  <Stop color="#fcab1496" offset="0.007662835249042145" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" prefHeight="58.0" prefWidth="394.0" style="-fx-border-color: ffad12; -fx-border-width: 0 0 0 3;" text="Consultar Clientes" textFill="#ebebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <ripplerFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.12380952380952381">
+               <stops>
+                  <Stop color="#ffad1496" />
+                  <Stop color="#fcab1496" offset="0.007662835249042145" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" prefHeight="58.0" prefWidth="372.0" style="-fx-border-color: ffad12; -fx-border-width: 0 0 0 3;" text="Modificar Clientes" textFill="#ebebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <ripplerFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.12380952380952381">
+               <stops>
+                  <Stop color="#ffad1496" />
+                  <Stop color="#fcab1496" offset="0.007662835249042145" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" prefHeight="58.0" prefWidth="341.0" style="-fx-border-color: ffad12; -fx-border-width: 0 0 0 3;" text="Baja Cliente" textFill="#ebebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <ripplerFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.12380952380952381">
+               <stops>
+                  <Stop color="#ffad1496" />
+                  <Stop color="#fcab1496" offset="0.007662835249042145" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" prefHeight="58.0" prefWidth="381.0" style="-fx-border-color: ffad12; -fx-border-width: 0 0 0 3;" text="Actualizar Factores de Características" textFill="#ebebeb">
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.12380952380952381">
+               <stops>
+                  <Stop color="#ffad1496" />
+                  <Stop color="#fcab1496" offset="0.007662835249042145" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" prefHeight="58.0" prefWidth="320.0" style="-fx-border-color: ffad12; -fx-border-width: 0 0 0 3;" text="Generar Propuestas de Renovación" textFill="#ebebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <ripplerFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.12380952380952381">
+               <stops>
+                  <Stop color="#ffad1496" />
+                  <Stop color="#fcab1496" offset="0.007662835249042145" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets top="5.0" />
+   </padding>
+</VBox>

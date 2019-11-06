@@ -62,6 +62,7 @@ public class Poliza {
     TipoCobertura tipoCobertura;
 
     @OneToMany
+    @JoinColumn(name = "fk_poliza")
     private List<PolizaModificada> polizaModificada;
 
     @ManyToOne

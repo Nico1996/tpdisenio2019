@@ -25,7 +25,7 @@ public class TPDisenio extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         applicationContext = SpringApplication.run(TPDisenio.class);
-        FXMLLoader loader = new FXMLLoader(TPDisenio.class.getResource("/main.fxml"));
+        FXMLLoader loader = new FXMLLoader(TPDisenio.class.getResource("/fxmls/main.fxml"));
         loader.setControllerFactory(applicationContext::getBean);
         Scene scene = new Scene (loader.load());
         primaryStage.setScene(scene);

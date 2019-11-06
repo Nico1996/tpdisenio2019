@@ -20,6 +20,7 @@ import org.controlsfx.validation.ValidationSupport;
 import org.controlsfx.validation.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import sun.font.Decoration;
 
 import javax.management.Notification;
@@ -27,7 +28,7 @@ import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-@Component
+@Controller
 public class LoginController implements Initializable {
     @FXML
     private AnchorPane loginAP;

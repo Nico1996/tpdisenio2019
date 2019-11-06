@@ -33,7 +33,7 @@
       </HBox>
       <ImageView fitHeight="216.0" fitWidth="225.0" layoutX="868.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="images/login.png" />
+            <Image url="/images/login.png" />
          </image>
       </ImageView>
       <Label fx:id="errorLabel" layoutX="918.0" layoutY="470.0" text="Error al ingresar usuario y/o contraseña" textFill="RED" visible="false">
