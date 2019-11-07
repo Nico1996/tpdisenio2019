@@ -20,7 +20,7 @@ public class Cliente {
     private Long cuil_cuit;
 
     @Column(name = "nro_cliente",nullable = false)
-    private Long nro_cliente;
+    private Integer nro_cliente;
 
     @Column(name = "nro_documento", nullable = false)
     private Long nro_documento;
@@ -58,6 +58,10 @@ public class Cliente {
 
     @Column(name="año_registro", nullable = false)
     private Integer año_registro;
+
+    @ManyToOne
+    @JoinColumn(name="fk_direccion")
+    private Direccion direccion;
 
     public Integer getId_cliente() {
         return id_cliente;
@@ -161,5 +165,29 @@ public class Cliente {
 
     public void setAño_registro(Integer año_registro) {
         this.año_registro = año_registro;
+    }
+
+    public Integer getNro_cliente() {
+        return nro_cliente;
+    }
+
+    public void setNro_cliente(Integer nro_cliente) {
+        this.nro_cliente = nro_cliente;
+    }
+
+    public Long getNro_documento() {
+        return nro_documento;
+    }
+
+    public void setNro_documento(Long nro_documento) {
+        this.nro_documento = nro_documento;
+    }
+
+    public Direccion getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
     }
 }

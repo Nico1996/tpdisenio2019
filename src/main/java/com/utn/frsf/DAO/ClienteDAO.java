@@ -14,5 +14,5 @@ import java.util.List;
 @Repository
 public interface ClienteDAO extends JpaRepository<Cliente,Integer> {
     @Query(value = "SELECT * FROM cliente WHERE apellido=:ap AND nombre=:nm AND nro_cliente=:nc AND nro_documento=:nd AND tipo_dni=:td", nativeQuery = true)
-    List<Cliente> findAllBy(@Param("ap") String ap, @Param("nm") String nm, @Param("nc") Long nc, @Param("nd") Long nd , @Param("td")String td);
+    List<Cliente> findAllByParametrosBuscador(@Param("ap") String ap, @Param("nm") String nm, @Param("nc") Long nc, @Param("nd") Long nd , @Param("td")String td);
 }

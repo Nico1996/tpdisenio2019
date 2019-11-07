@@ -12,6 +12,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import java.net.URL;
@@ -21,10 +22,14 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.util.List;
 import java.util.ResourceBundle;
 
 @Controller
 public class AbmHijosController implements Initializable {
+
+    @Autowired
+    AltaPolizaController altaPolizaController;
 
     @FXML
     private TableColumn<HijoDTO,Sexo> sexoColumn;
@@ -58,6 +63,10 @@ public class AbmHijosController implements Initializable {
         {
             HijoDTO hijoDTO = new HijoDTO(sexoHijoComboBox.getValue(), asd, estadoCivilHijoComboBox.getValue());
             hijosTableView.getItems().add(hijoDTO);
+            altaPolizaController.addHijoDTO(hijoDTO);
+            this.sexoHijoComboBox.setValue(null);
+            this.estadoCivilHijoComboBox.setValue(null);
+            this.fechaNacimientoHijoDatePicker.setValue(null);
             System.out.println(hijosTableView.getItems());
             hijosTableView.refresh();
         }
@@ -81,7 +90,9 @@ public class AbmHijosController implements Initializable {
         estadoCivilColumn.setCellValueFactory((new PropertyValueFactory<>("estado_civil")));
     }
 
-    public static Date asDate(LocalDate localDate) {
-        return Date.from(localDate.atStartOfDay().atZone(ZoneId.systemDefault()).toInstant());
+    public List<HijoDTO> getHijos(){
+        return this.hijosTableView.getItems();
     }
+
+
 }

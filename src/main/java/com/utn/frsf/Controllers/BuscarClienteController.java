@@ -25,6 +25,9 @@ public class BuscarClienteController implements Initializable {
     @Autowired
     private GestorCliente gestorCliente;
 
+    @Autowired
+    private AltaPolizaController altaPolizaController;
+
     @FXML
     private AnchorPane buscarClienteAnchorPane;
 
@@ -74,26 +77,25 @@ public class BuscarClienteController implements Initializable {
     @FXML
     public void buscarCliente_buscarButtonPressed(){
 
+        if(this.buscarTipoDniComboBox.getValue()!=null && this.buscarApellidoTextfield.getText() != null && this.buscarNombreTextfield != null && this.buscarNroClienteTextfield.getText() != null && this.buscarNroDocumentoTextfield.getText() != null)
+        {
+            Long nro_cliente = Long.valueOf(this.buscarNroClienteTextfield.getText());
+            Long nro_documento = Long.valueOf(this.buscarNroDocumentoTextfield.getText());
+            String apellido = this.buscarApellidoTextfield.getText();
+            String nombre = this.buscarNombreTextfield.getText();
+            TipoDocumento tipoDocumento = this.buscarTipoDniComboBox.getValue();
 
-        Long nro_cliente = Long.valueOf(this.buscarNroClienteTextfield.getText());
-        Long nro_documento= Long.valueOf(this.buscarNroDocumentoTextfield.getText());
-        String apellido = this.buscarApellidoTextfield.getText();
-        String nombre = this.buscarNombreTextfield.getText();
-        TipoDocumento tipoDocumento = this.buscarTipoDniComboBox.getValue();
-
-        Cliente cliente = new Cliente();
-        List<Cliente> listaClientes = this.gestorCliente.findAllClientes(nro_cliente,nro_documento,apellido,nombre,tipoDocumento);
-        cliente = listaClientes.get(0);
-
-        ClienteDTO clienteDTO = new ClienteDTO(cliente.getCuil_cuit(),cliente.getApellido(),cliente.getNombre(),cliente.getTipoDocumento(),cliente.getId_cliente());
-        this.tablaClientes.getItems().add(clienteDTO);
-        this.tablaClientes.refresh();
-
+            List<ClienteDTO> listaClientes = this.gestorCliente.findAllClientes(nro_cliente, nro_documento, apellido, nombre, tipoDocumento);
+            System.out.println(listaClientes);
+            this.tablaClientes.getItems().addAll(listaClientes);
+            this.tablaClientes.refresh();
+        }
     }
 
     @FXML
     public void seleccionarButtonPressed(){
-
+        this.altaPolizaController.setClienteDTO(this.tablaClientes.getSelectionModel().getSelectedItem());
+        System.out.println(this.tablaClientes.getSelectionModel().getSelectedItem().getId_cliente());
     }
 
     @Override

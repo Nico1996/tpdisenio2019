@@ -6,12 +6,44 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AbmHijosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AbmHijosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AltaPolizaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AltaPolizaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/BuscarClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/BuscarClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DAO/ClienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DAO/ClienteDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/ClienteDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/HijoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/HijoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/MedidaDeSeguridadDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/MedidaDeSeguridadDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/PolizaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/PolizaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/VehiculoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/VehiculoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorLocalidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorLocalidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorPoliza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorPoliza.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Localidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Localidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Modelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/asd.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/combobox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/AltaPoliza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/AltaPoliza.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/abmHijos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/abmHijos.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/buscarCliente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/buscarCliente.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/confirmacionPolizaPopUP.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/confirmacionPolizaPopUP.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DAO/ClienteDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DAO/ClienteDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/ClienteDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/ClienteDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/HijoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/HijoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/MedidaDeSeguridadDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/MedidaDeSeguridadDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/PolizaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/PolizaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/VehiculoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/VehiculoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorCliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorLocalidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorLocalidad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorPoliza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorPoliza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Localidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Localidad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Modelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Modelo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Vehiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AbmHijosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AbmHijosController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AltaPolizaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AltaPolizaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/BuscarClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/BuscarClienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxmls/AltaPoliza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/AltaPoliza.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxmls/abmHijos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/abmHijos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxmls/confirmacionPolizaPopUP.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/confirmacionPolizaPopUP.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,20 +97,10 @@
         <option value="package-info" />
         <option value="Enum" />
         <option value="Tag Library Descriptor" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ingresa</find>
-      <find>findby</find>
-      <find>user</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,7 +133,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572920803639" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -121,8 +143,9 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.utn.frsf.Model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Gonzalo\workspace\tpdisenio\src\main\resources" />
+      <recent name="D:\Gonzalo\workspace\tpdisenio\src\main\resources\images" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.utn.frsf.Model" />
@@ -134,9 +157,8 @@
       <recent name="" />
       <recent name="com.utn.frsf.Model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Gonzalo\workspace\tpdisenio\src\main\resources" />
-      <recent name="D:\Gonzalo\workspace\tpdisenio\src\main\resources\images" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.utn.frsf.Model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -191,6 +213,8 @@
       <workItem from="1572979678114" duration="9979000" />
       <workItem from="1573069389169" duration="555000" />
       <workItem from="1573069977503" duration="10910000" />
+      <workItem from="1573085346759" duration="3292000" />
+      <workItem from="1573088659482" duration="16185000" />
     </task>
     <servers />
   </component>
@@ -218,10 +242,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tpdisenio2019$TPDisenio.ic" NAME="TPDisenio Coverage Results" MODIFIED="1573078603563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

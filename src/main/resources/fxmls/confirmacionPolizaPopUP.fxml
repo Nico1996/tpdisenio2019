@@ -1,57 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="938.0" prefWidth="642.0" style="-fx-background-color: #6F706F; -fx-border-color: #ffab12; -fx-border-width: 0.35 0.35 0.35 0.35;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.ConfirmacionPolizaController">
    <children>
-      <AnchorPane layoutX="143.0" layoutY="47.0" prefHeight="626.0" prefWidth="144.0">
+      <AnchorPane layoutX="155.0" layoutY="94.0" prefHeight="626.0" prefWidth="144.0">
          <children>
-            <Label layoutX="100.0" text="Titular del seguro" AnchorPane.rightAnchor="0.0" />
-            <Label layoutX="42.0" layoutY="106.0" text="Datos del Vehiculo" AnchorPane.rightAnchor="0.0" />
-            <Label layoutX="94.0" layoutY="289.0" text="Vigencia" AnchorPane.rightAnchor="0.0" />
-            <Label layoutX="48.0" layoutY="405.0" text="Suma Asegurada:" AnchorPane.rightAnchor="0.0" />
-            <Label layoutX="99.0" layoutY="443.0" text="Premio:" AnchorPane.rightAnchor="0.0" />
-            <Label layoutX="5.0" layoutY="484.0" text="Importes por descuentos:" AnchorPane.rightAnchor="0.0" />
-            <Label layoutX="35.0" layoutY="522.0" text="Ultimo dia de pago:" AnchorPane.rightAnchor="0.0" />
-            <Label layoutX="24.0" layoutY="558.0" text="Monto total a abonar:" AnchorPane.rightAnchor="0.0" />
+            <Label layoutX="100.0" text="Titular del seguro" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="42.0" layoutY="106.0" text="Datos del Vehiculo" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="94.0" layoutY="289.0" text="Vigencia" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="48.0" layoutY="405.0" text="Suma Asegurada:" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="99.0" layoutY="443.0" text="Premio:" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="5.0" layoutY="484.0" text="Importes por descuentos:" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="35.0" layoutY="522.0" text="Ultimo dia de pago:" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="24.0" layoutY="558.0" text="Monto total a abonar:" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="287.0" layoutY="68.0" prefHeight="589.0" prefWidth="264.0">
+      <AnchorPane layoutX="315.0" layoutY="113.0" prefHeight="589.0" prefWidth="302.0">
          <children>
-            <Label layoutX="22.0" layoutY="14.0" text="Apellido:" AnchorPane.leftAnchor="0.0" />
-            <Label layoutY="45.0" text="Nombre:" />
-            <JFXTextField layoutX="52.0" layoutY="10.0" text="asd" AnchorPane.leftAnchor="52.0" />
-            <JFXTextField layoutX="51.0" layoutY="41.0" text="asd" AnchorPane.leftAnchor="51.0" />
-            <JFXTextField layoutX="56.0" layoutY="131.0" prefHeight="25.0" prefWidth="135.0" text="asd" AnchorPane.leftAnchor="52.0" />
-            <JFXTextField layoutX="56.0" layoutY="101.0" prefHeight="25.0" prefWidth="135.0" text="asd" AnchorPane.leftAnchor="52.0" />
-            <Label layoutY="135.0" text="Modelo:" AnchorPane.leftAnchor="0.0" />
-            <Label layoutY="104.0" text="Marca:" AnchorPane.leftAnchor="0.0" />
-            <Label layoutX="3.0" layoutY="169.0" text="Motor:" AnchorPane.leftAnchor="0.0" />
-            <Label layoutX="3.0" layoutY="200.0" text="Chasis:" AnchorPane.leftAnchor="0.0" />
-            <JFXTextField layoutX="52.0" layoutY="165.0" prefHeight="25.0" prefWidth="135.0" text="asd" AnchorPane.leftAnchor="52.0" />
-            <JFXTextField layoutX="52.0" layoutY="195.0" prefHeight="25.0" prefWidth="135.0" text="asd" />
-            <JFXTextField layoutX="51.0" layoutY="228.0" prefHeight="25.0" prefWidth="135.0" text="asd" />
-            <Label layoutX="2.0" layoutY="232.0" text="Patente:" AnchorPane.leftAnchor="0.0" />
-            <Label layoutX="4.0" layoutY="293.0" text="Fecha de inicio:" />
-            <Label layoutX="4.0" layoutY="334.0" text="Fecha de fin:" />
-            <DatePicker layoutX="90.0" layoutY="290.0" />
-            <DatePicker layoutX="90.0" layoutY="330.0" />
-            <JFXTextField layoutX="7.0" layoutY="380.0" text="asd" AnchorPane.leftAnchor="7.0" />
-            <JFXTextField layoutX="7.0" layoutY="418.0" text="asd" AnchorPane.leftAnchor="7.0" />
-            <JFXTextField layoutX="7.0" layoutY="498.0" text="asd" AnchorPane.leftAnchor="7.0" />
-            <JFXTextField layoutX="7.0" layoutY="534.0" text="asd" AnchorPane.leftAnchor="7.0" />
-            <JFXTextField layoutX="7.0" layoutY="459.0" text="asd" AnchorPane.leftAnchor="7.0" />
+            <Label layoutX="22.0" layoutY="14.0" text="Apellido:" textFill="#ffb42a" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutY="45.0" text="Nombre:" textFill="#ffb42a">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <JFXTextField fx:id="apellidoResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="61.0" layoutY="9.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="61.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="nombreResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="60.0" layoutY="40.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="60.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="modeloResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="58.0" layoutY="130.0" prefHeight="30.0" prefWidth="152.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="58.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="marcaResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="61.0" layoutY="99.0" prefHeight="30.0" prefWidth="152.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="61.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <Label layoutY="135.0" text="Modelo:" textFill="#ffb42a" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutY="104.0" text="Marca:" textFill="#ffb42a" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="3.0" layoutY="169.0" text="Motor:" textFill="#ffb42a" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="3.0" layoutY="200.0" text="Chasis:" textFill="#ffb42a" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <JFXTextField fx:id="motorResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="61.0" layoutY="164.0" prefHeight="30.0" prefWidth="152.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="61.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="chasisResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="61.0" layoutY="195.0" prefHeight="30.0" prefWidth="152.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="patenteResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="61.0" layoutY="227.0" prefHeight="30.0" prefWidth="152.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <Label layoutX="2.0" layoutY="232.0" text="Patente:" textFill="#ffb42a" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="4.0" layoutY="293.0" text="Fecha de inicio:" textFill="#ffb42a">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <Label layoutX="4.0" layoutY="334.0" text="Fecha de fin:" textFill="#ffb42a">
+               <font>
+                  <Font size="13.5" />
+               </font></Label>
+            <JFXTextField fx:id="sumaResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="4.0" layoutY="382.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="4.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="premioResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="6.0" layoutY="419.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="6.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="ultimodiaResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="6.0" layoutY="497.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="6.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="montoResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="6.0" layoutY="534.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="6.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="descuentosResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="6.0" layoutY="461.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="6.0">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="fechafinResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="88.0" layoutY="329.0" prefHeight="30.0" prefWidth="152.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3">
+               <font>
+                  <Font size="13.5" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="fechainicioResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="103.0" layoutY="288.0" prefHeight="30.0" prefWidth="152.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3">
+               <font>
+                  <Font size="13.5" />
+               </font>
+            </JFXTextField>
          </children>
       </AnchorPane>
-      <HBox alignment="BASELINE_CENTER" layoutX="271.0" layoutY="661.0" prefHeight="25.0" prefWidth="152.0" spacing="15.0" AnchorPane.bottomAnchor="34.0">
+      <HBox alignment="CENTER" layoutX="414.0" layoutY="720.0" prefHeight="30.0" prefWidth="203.0" spacing="10.0">
          <children>
-            <JFXButton text="Cancelar" />
-            <JFXButton text="Confirmar" />
+            <JFXButton style="-fx-background-color: ffce73;" text="Cancelar">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXButton>
+            <JFXButton style="-fx-background-color: ffce73;" text="Confirmar">
+               <font>
+                  <Font size="13.5" />
+               </font></JFXButton>
          </children>
       </HBox>
+      <Label layoutX="17.0" layoutY="32.0" text="Resumen de Poliza: " textFill="#ffb42a">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

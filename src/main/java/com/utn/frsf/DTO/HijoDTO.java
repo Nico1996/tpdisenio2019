@@ -13,6 +13,9 @@ public class HijoDTO {
         this.estado_civil = estado_civil;
     }
 
+    public HijoDTO() {
+    }
+
     private Sexo sexo;
     private Date fecha_nacimiento;
     private EstadoCivil estado_civil;
