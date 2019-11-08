@@ -12,7 +12,7 @@ import java.util.List;
 public class Poliza {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="nro_poliza",nullable = false)
+    @Column(name="nro_poliza")
     private Integer nro_poliza;
 
     @Column(name="estado",nullable = false)
@@ -86,7 +86,7 @@ public class Poliza {
     private FactoresCaracteristicas factoresCaracteristicas;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "fk_cuota")
+    @JoinColumn(name = "fk_poliza")
     private List<Cuota> cuotas;
 
     public Integer getNro_poliza() {

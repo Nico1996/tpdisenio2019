@@ -68,7 +68,6 @@ public class AbmHijosController implements Initializable {
             this.sexoHijoComboBox.setValue(null);
             this.estadoCivilHijoComboBox.setValue(null);
             this.fechaNacimientoHijoDatePicker.setValue(null);
-            System.out.println(hijosTableView.getItems());
             hijosTableView.refresh();
         }
         else{

@@ -7,30 +7,22 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AbmHijosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AbmHijosController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AltaPolizaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AltaPolizaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/BuscarClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/BuscarClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/ConfirmacionPolizaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/ConfirmacionPolizaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/HijoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/HijoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/ClienteDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/PolizaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/PolizaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/VehiculoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/VehiculoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorLocalidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorLocalidad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorPoliza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorPoliza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cuota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cuota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Hijo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Hijo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Poliza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Poliza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/TPDisenio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/TPDisenio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/AltaPoliza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/AltaPoliza.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/abmHijos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/abmHijos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/buscarCliente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/buscarCliente.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/confirmacionPolizaPopUP.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/confirmacionPolizaPopUP.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/ClienteDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/ClienteDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/HijoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/HijoDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/PolizaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/PolizaDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/VehiculoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/VehiculoDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorPoliza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorPoliza.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Vehiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Poliza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Poliza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/TPDisenio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/TPDisenio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AltaPolizaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AltaPolizaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fxmls/AltaPoliza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/AltaPoliza.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxmls/abmHijos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/abmHijos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxmls/confirmacionPolizaPopUP.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/confirmacionPolizaPopUP.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,6 +163,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -199,7 +194,10 @@
       <workItem from="1573069977503" duration="10910000" />
       <workItem from="1573085346759" duration="3292000" />
       <workItem from="1573088659482" duration="16185000" />
-      <workItem from="1573163688215" duration="14771000" />
+      <workItem from="1573163688215" duration="14887000" />
+      <workItem from="1573189820955" duration="985000" />
+      <workItem from="1573191942278" duration="1958000" />
+      <workItem from="1573234555531" duration="5022000" />
     </task>
     <servers />
   </component>

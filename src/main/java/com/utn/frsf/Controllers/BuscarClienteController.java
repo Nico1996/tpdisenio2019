@@ -86,7 +86,6 @@ public class BuscarClienteController implements Initializable {
             TipoDocumento tipoDocumento = this.buscarTipoDniComboBox.getValue();
 
             List<ClienteDTO> listaClientes = this.gestorCliente.findAllClientes(nro_cliente, nro_documento, apellido, nombre, tipoDocumento);
-            System.out.println(listaClientes);
             if(listaClientes != null) {
                 this.tablaClientes.getItems().addAll(listaClientes);
                 this.tablaClientes.refresh();
@@ -101,7 +100,7 @@ public class BuscarClienteController implements Initializable {
     public void seleccionarButtonPressed(){
         if(this.tablaClientes.getSelectionModel().getSelectedItem() != null) {
             this.altaPolizaController.setClienteDTO(this.tablaClientes.getSelectionModel().getSelectedItem());
-            System.out.println(this.tablaClientes.getSelectionModel().getSelectedItem().getId_cliente());
+
         }
         else{
             altaPolizaController.showError("Seleccionar un cliente de la lista.");

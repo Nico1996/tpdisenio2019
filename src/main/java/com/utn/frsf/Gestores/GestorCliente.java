@@ -21,8 +21,6 @@ public class GestorCliente {
        List<ClienteDTO> listaClientesDTO = new ArrayList<>();
             for(Cliente c : clienteDAO.findAllByParametrosBuscador(apellido,nombre,nro_cliente,nro_documento,tipoDocumento.toString())){
                 ClienteDTO clienteDTO = new ClienteDTO(c.getNro_documento(),c.getApellido(),c.getNombre(),c.getTipoDocumento(),c.getNro_cliente(),c.getId_cliente());
-                System.out.println(clienteDTO);
-                System.out.println(c.getDireccion());
                 clienteDTO.setCalle(c.getDireccion().getCalle());
                 clienteDTO.setNumero(c.getDireccion().getNumero());
                 listaClientesDTO.add(clienteDTO);

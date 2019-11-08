@@ -29,6 +29,7 @@ public class GestorPoliza {
     private LocalidadDAO localidadDAO;
     @Autowired
     private MedidasDeSeguridadDAO medidasDeSeguridadDAO;
+    @Autowired SiniestrosFcDAO siniestrosFcDAO;
 
 
     @Autowired
@@ -78,61 +79,64 @@ public class GestorPoliza {
 
         Poliza poliza = new Poliza();
 
-        if(!polizaDAO.findById(1).equals(Optional.empty())){
+        /*if(admin!polizaDAO.findById(polizaDTO.nro_poliza).equals(Optional.empty())){
             altaPolizaController.showError("La poliza ya se encuentra creada.");
-        }
+        }*/
+       // else {
 
-        Vehiculo vehiculo = new Vehiculo();
-        poliza.setNro_poliza(1);
-        poliza.setEstadoPoliza(EstadoPoliza.GENERADA);
-        poliza.setKm_año(polizaDTO.getKm_año());
-        poliza.setFecha_inicioVigencia(polizaDTO.getFecha_inicio());
-        poliza.setFecha_finVigencia(polizaDTO.getFecha_fin());
-        poliza.setImporte_por_descuento(polizaDTO.getImporte_x_descuento());
-        poliza.setMontoTotal_abonar(polizaDTO.getMonto_total());
-        poliza.setSuma_asegurada(polizaDTO.getPremio());
-        poliza.setFormaPago(polizaDTO.getFormaPago());
-        poliza.setCliente(clienteDAO.findById(polizaDTO.getId_clienteDTO()).get());
-        poliza.setLocalidad(localidadDAO.findById(polizaDTO.getLocalidad()).get());
-        poliza.setUltimo_dia_pago(polizaDTO.getFecha_fin());
-        poliza.setPremio(Float.valueOf(0));
+            Vehiculo vehiculo = new Vehiculo();
+            poliza.setNro_poliza(1);
+            poliza.setEstadoPoliza(EstadoPoliza.GENERADA);
+            poliza.setKm_año(polizaDTO.getKm_año());
+            poliza.setFecha_inicioVigencia(polizaDTO.getFecha_inicio());
+            poliza.setFecha_finVigencia(polizaDTO.getFecha_fin());
+            poliza.setImporte_por_descuento(polizaDTO.getImporte_x_descuento());
+            poliza.setMontoTotal_abonar(polizaDTO.getMonto_total());
+            poliza.setSuma_asegurada(polizaDTO.getPremio());
+            poliza.setFormaPago(polizaDTO.getFormaPago());
+            poliza.setCliente(clienteDAO.findById(polizaDTO.getId_clienteDTO()).get());
+            poliza.setLocalidad(localidadDAO.findById(polizaDTO.getLocalidad()).get());
+            poliza.setUltimo_dia_pago(polizaDTO.getFecha_fin());
+            poliza.setPremio(Float.valueOf(0));
+            poliza.setSiniestrosFC(siniestrosFcDAO.findById(polizaDTO.getId_siniestros()).get());
 
-        vehiculo.setChasis(polizaDTO.getVehiculoDTO().getChasis());
-        vehiculo.setId_vehiculo(null);
-        vehiculo.setAño(polizaDTO.getVehiculoDTO().getAño());
-        vehiculo.setMotor(polizaDTO.getVehiculoDTO().getMotor());
-        vehiculo.setPatente(polizaDTO.getVehiculoDTO().getPatente());
-        vehiculo.setModelo(modeloVehiculoDAO.findById(polizaDTO.getVehiculoDTO().getId_modelo()).get());
+            vehiculo.setChasis(polizaDTO.getVehiculoDTO().getChasis());
+            vehiculo.setId_vehiculo(null);
+            vehiculo.setAño(polizaDTO.getVehiculoDTO().getAño());
+            vehiculo.setMotor(polizaDTO.getVehiculoDTO().getMotor());
+            vehiculo.setPatente(polizaDTO.getVehiculoDTO().getPatente());
+            vehiculo.setModelo(modeloVehiculoDAO.findById(polizaDTO.getVehiculoDTO().getId_modelo()).get());
 
-        List<MedidaDeSeguridad> medidaDeSeguridadList = new ArrayList<>();
+            List<MedidaDeSeguridad> medidaDeSeguridadList = new ArrayList<>();
 
-        for(Integer i : polizaDTO.getVehiculoDTO().getMedidas_id()){
-            medidaDeSeguridadList.add(medidasDeSeguridadDAO.findById(i).get());
-        }
-        vehiculo.setMedidasDeSeguridad(medidaDeSeguridadList);
-        poliza.setVehiculo(vehiculo);
+            for (Integer i : polizaDTO.getVehiculoDTO().getMedidas_id()) {
+                medidaDeSeguridadList.add(medidasDeSeguridadDAO.findById(i).get());
+            }
+            vehiculo.setMedidasDeSeguridad(medidaDeSeguridadList);
+            poliza.setVehiculo(vehiculo);
 
-        List<Hijo> listHijos=new ArrayList<>();
-        for (HijoDTO h : polizaDTO.getHijoDTOList()) {
-            Hijo hijo = new Hijo(h.getSexo(), h.getEstado_civil(), h.getFecha_nacimiento());
-            listHijos.add(hijo);
-        }
-        poliza.setListaHijos(listHijos);
-        poliza.setTipoCobertura(tipoDeCoberturaDAO.findById(polizaDTO.getId_tipoCoberturaDTO()).get());
+            List<Hijo> listHijos = new ArrayList<>();
+            for (HijoDTO h : polizaDTO.getHijoDTOList()) {
+                Hijo hijo = new Hijo(h.getSexo(), h.getEstado_civil(), h.getFecha_nacimiento());
+                listHijos.add(hijo);
+            }
+            poliza.setListaHijos(listHijos);
+            poliza.setTipoCobertura(tipoDeCoberturaDAO.findById(polizaDTO.getId_tipoCoberturaDTO()).get());
 
-        List<Cuota> listCuotas=new ArrayList<>();
-        for (CuotaDTO c : polizaDTO.getCuotaDTOList()) {
-            Cuota cuota = new Cuota();
-            cuota.setFecha_vencimiento(c.getFecha_vencimiento());
-            cuota.setMonto(c.getMonto());
-            listCuotas.add(cuota);
-        }
-        poliza.setCuotas(listCuotas);
+            List<Cuota> listCuotas = new ArrayList<>();
+            for (CuotaDTO c : polizaDTO.getCuotaDTOList()) {
+                Cuota cuota = new Cuota();
+                cuota.setFecha_vencimiento(c.getFecha_vencimiento());
+                cuota.setMonto(c.getMonto());
+                listCuotas.add(cuota);
+            }
+            poliza.setCuotas(listCuotas);
 
-        polizaDAO.save(poliza);
+            polizaDAO.save(poliza);
 
-        altaPolizaController.notificarExito("La poliza se creo correctamente");
-        altaPolizaController.volverDeConfirmacion();
+            altaPolizaController.notificarExito("La poliza se creo correctamente");
+            altaPolizaController.volverDeConfirmacion();
+       // }
 
     }
 }

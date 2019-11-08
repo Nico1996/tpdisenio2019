@@ -21,6 +21,7 @@ public class PolizaDTO {
     private Date ultimo_dia_pago;
     private Float monto_total;
     private Float km_año;
+    private Integer id_siniestros;
 
     public Float getKm_año() {
         return km_año;
@@ -34,6 +35,14 @@ public class PolizaDTO {
 
 
     public PolizaDTO() {
+    }
+
+    public Integer getId_siniestros() {
+        return id_siniestros;
+    }
+
+    public void setId_siniestros(Integer id_siniestros) {
+        this.id_siniestros = id_siniestros;
     }
 
     public List<CuotaDTO> getCuotaDTOList() {

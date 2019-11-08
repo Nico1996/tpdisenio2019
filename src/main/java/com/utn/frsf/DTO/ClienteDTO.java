@@ -11,6 +11,7 @@ public class ClienteDTO {
     private Integer id_cliente;
     private String calle;
     private String numero;
+    private Integer cantidad_siniestros;
 
 
 
@@ -26,6 +27,14 @@ public class ClienteDTO {
     }
 
     public ClienteDTO() {
+    }
+
+    public Integer getCantidad_siniestros() {
+        return cantidad_siniestros;
+    }
+
+    public void setCantidad_siniestros(Integer cantidad_siniestros) {
+        this.cantidad_siniestros = cantidad_siniestros;
     }
 
     public String getCalle() {

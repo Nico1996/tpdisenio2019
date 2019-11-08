@@ -29,7 +29,6 @@ public class GestorLocalidad {
             ProvinciaDTO provinciaDTO = new ProvinciaDTO(p.getId_provincia(),p.getNombre());
             list.add(provinciaDTO);
         }
-        System.out.println(list);
         return list;
     }
 

@@ -34,19 +34,7 @@ public class AltaPolizaController implements Initializable {
 
     private ClienteDTO clienteDTO;
 
-    public void addHijoDTO(HijoDTO hijoDTO){
-        this.hijosDTO.add(hijoDTO);
-    }
 
-    public void setClienteDTO(ClienteDTO c){
-        this.clienteDTO=c;
-        this.numeroClienteTextfield.setText(c.getNroCliente().toString());
-        this.dniComboBox.setValue(c.getTipoDocumento());
-        this.nroDocumentoTextfield.setText(c.getNumeroDocumento().toString());
-        this.nombreTextfield.setText(c.getNombre());
-        this.apellidoTextfield.setText(c.getApellido());
-        this.domicilioTextfield.setText(c.getCalle() + " " + c.getNumero());
-    }
 
     private VehiculoDTO vehiculoDTO;
 
@@ -138,13 +126,13 @@ public class AltaPolizaController implements Initializable {
 
     @FXML private JFXTextField domicilioTextfield;
 
+    @FXML private JFXTextField tipoDocumentoTextfield;
 
     @Autowired
     private BuscarClienteController buscarClienteController;
 
     @Autowired
     private AbmHijosController abmHijosController;
-
 
     @Autowired
     private DashboardProdSegurosController dashboardProdSegurosController;
@@ -158,11 +146,25 @@ public class AltaPolizaController implements Initializable {
     @Autowired
     private ConfirmacionPolizaController confirmacionPolizaController;
 
+    public void addHijoDTO(HijoDTO hijoDTO){
+        this.hijosDTO.add(hijoDTO);
+    }
+
+    public void setClienteDTO(ClienteDTO c){
+        this.clienteDTO=c;
+        this.numeroClienteTextfield.setText(c.getNroCliente().toString());
+        //this.dniComboBox.setValue(c.getTipoDocumento());
+        this.tipoDocumentoTextfield.setText(c.getTipoDocumento().toString());
+        this.nroDocumentoTextfield.setText(c.getNumeroDocumento().toString());
+        this.nombreTextfield.setText(c.getNombre());
+        this.apellidoTextfield.setText(c.getApellido());
+        this.domicilioTextfield.setText(c.getCalle() + " " + c.getNumero());
+    }
+
     @FXML
     public void confirmarAltaPolizaButtonPressed(){
 
         if(this.verificarCamposCompletos()){
-            System.out.println(nombreTextfield.getText());
             this.crearVehiculoDTO();
             this.crearPolizaDTO();
             this.confirmacionPolizaController.setDatos(this.polizaDTO,this.vehiculoDTO,this.clienteDTO);
@@ -195,6 +197,19 @@ public class AltaPolizaController implements Initializable {
         polizaDTO.setVehiculoDTO(vehiculoDTO);
         List<CuotaDTO> cuotaDTOList = this.crearCuotasDTO(polizaDTO.getMonto_total(),polizaDTO.getFormaPago());
         this.polizaDTO.setCuotaDTOList(cuotaDTOList);
+
+        if(Integer.valueOf(this.siniestrosTextField.getText()) == 0){
+            this.polizaDTO.setId_siniestros(1);
+        }
+        else if (Integer.valueOf(this.siniestrosTextField.getText()) == 1){
+            this.polizaDTO.setId_siniestros(2);
+        }
+        else if (Integer.valueOf(this.siniestrosTextField.getText()) == 2){
+            this.polizaDTO.setId_siniestros(3);
+        }
+        else if (Integer.valueOf(this.siniestrosTextField.getText()) >= 2){
+            this.polizaDTO.setId_siniestros(4);
+        }
     }
 
     public boolean verificarCamposCompletos(){
