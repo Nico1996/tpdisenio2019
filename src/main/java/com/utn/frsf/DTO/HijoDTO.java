@@ -19,7 +19,7 @@ public class HijoDTO {
     private Sexo sexo;
     private Date fecha_nacimiento;
     private EstadoCivil estado_civil;
-    private SimpleStringProperty asd;
+
 
     public Sexo getSexo() {
         return sexo;
@@ -45,15 +45,5 @@ public class HijoDTO {
         this.estado_civil = estado_civil;
     }
 
-    public String getAsd() {
-        return asd.get();
-    }
 
-    public SimpleStringProperty asdProperty() {
-        return asd;
-    }
-
-    public void setAsd(String asd) {
-        this.asd.set(asd);
-    }
 }

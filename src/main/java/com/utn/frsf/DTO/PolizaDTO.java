@@ -20,11 +20,28 @@ public class PolizaDTO {
     private Float importe_x_descuento;
     private Date ultimo_dia_pago;
     private Float monto_total;
+    private Float km_año;
 
+    public Float getKm_año() {
+        return km_año;
+    }
 
+    public void setKm_año(Float km_año) {
+        this.km_año = km_año;
+    }
+
+    private List<CuotaDTO> cuotaDTOList;
 
 
     public PolizaDTO() {
+    }
+
+    public List<CuotaDTO> getCuotaDTOList() {
+        return cuotaDTOList;
+    }
+
+    public void setCuotaDTOList(List<CuotaDTO> cuotaDTOList) {
+        this.cuotaDTOList = cuotaDTOList;
     }
 
     public Integer getId_clienteDTO() {

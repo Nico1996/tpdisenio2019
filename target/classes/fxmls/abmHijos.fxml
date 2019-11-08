@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="administrarHijosAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="543.0" style="-fx-background-color: #6F706F; -fx-border-color: ffce73; -fx-border-width: 0.35 0.35 0.35 0.35;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.AbmHijosController">
+<AnchorPane fx:id="administrarHijosAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="543.0" style="-fx-background-color: #6F706F; -fx-border-color: ffce73; -fx-border-width: 0.35 0.35 0.35 0.35;" visible="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.AbmHijosController">
    <children>
       <AnchorPane layoutX="111.0" layoutY="14.0" prefHeight="113.0" prefWidth="322.0">
          <children>

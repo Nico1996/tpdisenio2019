@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="642.0" style="-fx-background-color: #6F706F; -fx-border-color: #ffab12; -fx-border-width: 0.35 0.35 0.35 0.35;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.ConfirmacionPolizaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="642.0" style="-fx-background-color: #6F706F; -fx-border-color: #ffab12; -fx-border-width: 0.35 0.35 0.35 0.35;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.ConfirmacionPolizaController">
    <children>
       <AnchorPane layoutX="155.0" layoutY="94.0" prefHeight="626.0" prefWidth="144.0">
          <children>
@@ -34,11 +34,11 @@
                <font>
                   <Font size="13.5" />
                </font></Label>
-            <Label layoutX="35.0" layoutY="522.0" text="Ultimo dia de pago:" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+            <Label layoutX="35.0" layoutY="522.0" text="Ultimo dia de pago:" textFill="#ffb42a" visible="false" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font size="13.5" />
                </font></Label>
-            <Label layoutX="24.0" layoutY="558.0" text="Monto total a abonar:" textFill="#ffb42a" AnchorPane.rightAnchor="0.0">
+            <Label layoutX="24.0" layoutY="558.0" text="Monto total a abonar:" textFill="#ffb42a" visible="false" AnchorPane.rightAnchor="0.0">
                <font>
                   <Font size="13.5" />
                </font></Label>
@@ -118,11 +118,11 @@
                <font>
                   <Font size="13.5" />
                </font></JFXTextField>
-            <JFXTextField fx:id="ultimodiaResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="6.0" layoutY="497.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="6.0">
+            <JFXTextField fx:id="ultimodiaResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="6.0" layoutY="497.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" visible="false" AnchorPane.leftAnchor="6.0">
                <font>
                   <Font size="13.5" />
                </font></JFXTextField>
-            <JFXTextField fx:id="montoResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="6.0" layoutY="534.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" AnchorPane.leftAnchor="6.0">
+            <JFXTextField fx:id="montoResumenTextField" disable="true" editable="false" focusColor="WHITE" layoutX="6.0" layoutY="534.0" prefHeight="30.0" style="-fx-text-fill: white;" unFocusColor="#c3c3c3" visible="false" AnchorPane.leftAnchor="6.0">
                <font>
                   <Font size="13.5" />
                </font></JFXTextField>
@@ -142,13 +142,13 @@
             </JFXTextField>
          </children>
       </AnchorPane>
-      <HBox alignment="CENTER" layoutX="414.0" layoutY="720.0" prefHeight="30.0" prefWidth="203.0" spacing="10.0">
+      <HBox alignment="CENTER" layoutX="407.0" layoutY="801.0" prefHeight="30.0" prefWidth="203.0" spacing="10.0">
          <children>
-            <JFXButton style="-fx-background-color: ffce73;" text="Cancelar">
+            <JFXButton fx:id="cancelarAltaPolizaButton" onAction="#cancelarAltaPolizaButtonPressed" style="-fx-background-color: ffce73;" text="Cancelar">
                <font>
                   <Font size="13.5" />
                </font></JFXButton>
-            <JFXButton style="-fx-background-color: ffce73;" text="Confirmar">
+            <JFXButton fx:id="confirmarAltaPolizaButton" onAction="#confirmarAltaPolizaButtonPressed" style="-fx-background-color: ffce73;" text="Confirmar">
                <font>
                   <Font size="13.5" />
                </font></JFXButton>
@@ -159,5 +159,10 @@
             <Font size="23.0" />
          </font>
       </Label>
+      <JFXTextArea fx:id="textAreaConfirmacion" editable="false" focusColor="#f28f56" labelFloat="true" layoutX="138.0" layoutY="640.0" prefHeight="137.0" prefWidth="454.0" promptText="Resumen de cuotas: " style="-fx-text-inner-color: white; -fx-prompt-text-inner-color: #f28f56; -fx-prompt-text-color: #f28f56; -fx-background-color: #696b69;" unFocusColor="#f28f56">
+         <font>
+            <Font size="13.5" />
+         </font>
+      </JFXTextArea>
    </children>
 </AnchorPane>

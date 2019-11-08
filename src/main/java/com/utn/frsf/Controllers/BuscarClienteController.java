@@ -87,15 +87,25 @@ public class BuscarClienteController implements Initializable {
 
             List<ClienteDTO> listaClientes = this.gestorCliente.findAllClientes(nro_cliente, nro_documento, apellido, nombre, tipoDocumento);
             System.out.println(listaClientes);
-            this.tablaClientes.getItems().addAll(listaClientes);
-            this.tablaClientes.refresh();
+            if(listaClientes != null) {
+                this.tablaClientes.getItems().addAll(listaClientes);
+                this.tablaClientes.refresh();
+            }
+        }
+        else{
+            altaPolizaController.showError("Completar los datos faltantes del cliente.");
         }
     }
 
     @FXML
     public void seleccionarButtonPressed(){
-        this.altaPolizaController.setClienteDTO(this.tablaClientes.getSelectionModel().getSelectedItem());
-        System.out.println(this.tablaClientes.getSelectionModel().getSelectedItem().getId_cliente());
+        if(this.tablaClientes.getSelectionModel().getSelectedItem() != null) {
+            this.altaPolizaController.setClienteDTO(this.tablaClientes.getSelectionModel().getSelectedItem());
+            System.out.println(this.tablaClientes.getSelectionModel().getSelectedItem().getId_cliente());
+        }
+        else{
+            altaPolizaController.showError("Seleccionar un cliente de la lista.");
+        }
     }
 
     @Override

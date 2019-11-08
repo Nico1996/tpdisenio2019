@@ -2,45 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbd33ad-723c-440e-9cea-5850fde2a6a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AbmHijosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AbmHijosController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AltaPolizaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/AltaPolizaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/BuscarClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/BuscarClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DAO/ClienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DAO/ClienteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/ClienteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/ConfirmacionPolizaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Controllers/ConfirmacionPolizaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DAO/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/HijoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/HijoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/MedidaDeSeguridadDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/MedidaDeSeguridadDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/PolizaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/PolizaDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/VehiculoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/DTO/VehiculoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorLocalidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorLocalidad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorPoliza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorPoliza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Localidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Localidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Modelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Gestores/GestorUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cuota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Cuota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Hijo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Hijo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Poliza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Poliza.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/Model/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/asd.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/combobox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utn/frsf/TPDisenio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utn/frsf/TPDisenio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/AltaPoliza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/AltaPoliza.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/abmHijos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/abmHijos.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/buscarCliente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/buscarCliente.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxmls/confirmacionPolizaPopUP.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxmls/confirmacionPolizaPopUP.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DAO/ClienteDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DAO/ClienteDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/ClienteDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/ClienteDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/HijoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/HijoDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/MedidaDeSeguridadDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/MedidaDeSeguridadDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/PolizaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/PolizaDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/VehiculoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/DTO/VehiculoDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorLocalidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorLocalidad.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorPoliza.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorPoliza.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Localidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Localidad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Modelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Modelo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Gestores/GestorUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/Model/Vehiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AbmHijosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AbmHijosController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AltaPolizaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/AltaPolizaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/BuscarClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/utn/frsf/controllers/BuscarClienteController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fxmls/AltaPoliza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/AltaPoliza.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fxmls/abmHijos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/abmHijos.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fxmls/confirmacionPolizaPopUP.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxmls/confirmacionPolizaPopUP.fxml" afterDir="false" />
@@ -81,15 +68,11 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="sql10310926: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sql10310926@sql10.freemysqlhosting.net" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sql10310926: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="cliente: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="tpdisenio2019" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -137,15 +120,15 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Gonzalo\workspace\tpdisenio\src\main\resources" />
-      <recent name="D:\Gonzalo\workspace\tpdisenio\src\main\resources\images" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.utn.frsf.DTO" />
+      <recent name="com.utn.frsf.Model" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.utn.frsf.Model" />
@@ -157,8 +140,9 @@
       <recent name="" />
       <recent name="com.utn.frsf.Model" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.utn.frsf.Model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Gonzalo\workspace\tpdisenio\src\main\resources" />
+      <recent name="D:\Gonzalo\workspace\tpdisenio\src\main\resources\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -215,6 +199,7 @@
       <workItem from="1573069977503" duration="10910000" />
       <workItem from="1573085346759" duration="3292000" />
       <workItem from="1573088659482" duration="16185000" />
+      <workItem from="1573163688215" duration="14771000" />
     </task>
     <servers />
   </component>

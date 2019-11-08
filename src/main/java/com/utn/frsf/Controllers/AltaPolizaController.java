@@ -12,12 +12,16 @@ import com.utn.frsf.Gestores.GestorPoliza;
 import com.utn.frsf.Model.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.DatePicker;
 import javafx.scene.layout.AnchorPane;
+import javafx.util.Duration;
+import org.controlsfx.control.Notifications;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -157,18 +161,16 @@ public class AltaPolizaController implements Initializable {
     @FXML
     public void confirmarAltaPolizaButtonPressed(){
 
-        this.crearVehiculoDTO();
-        this.crearPolizaDTO();
-
-        System.out.println(polizaDTO);
-        System.out.println(vehiculoDTO);
-
-        this.confirmacionPolizaController.setDatos(this.polizaDTO,this.vehiculoDTO,this.clienteDTO);
-        this.confirmacionAnchorPane.setVisible(true);
-
-        this.formularioAnchorPane.setVisible(false);
-
+        if(this.verificarCamposCompletos()){
+            System.out.println(nombreTextfield.getText());
+            this.crearVehiculoDTO();
+            this.crearPolizaDTO();
+            this.confirmacionPolizaController.setDatos(this.polizaDTO,this.vehiculoDTO,this.clienteDTO);
+            this.confirmacionAnchorPane.setVisible(true);
+            this.formularioAnchorPane.setVisible(false);
         }
+
+    }
     private void crearPolizaDTO(){
 
         polizaDTO.setLocalidad(this.localidadComboBox.getValue().getId_localidad());
@@ -189,14 +191,35 @@ public class AltaPolizaController implements Initializable {
         polizaDTO.setMonto_total(Float.valueOf(10000));
         polizaDTO.setId_clienteDTO(clienteDTO.getId_cliente());
         polizaDTO.setHijoDTOList(hijosDTO);
+        polizaDTO.setKm_año(Float.valueOf(this.kmsPorAñoTextField.getText()));
         polizaDTO.setVehiculoDTO(vehiculoDTO);
+        List<CuotaDTO> cuotaDTOList = this.crearCuotasDTO(polizaDTO.getMonto_total(),polizaDTO.getFormaPago());
+        this.polizaDTO.setCuotaDTOList(cuotaDTOList);
+    }
+
+    public boolean verificarCamposCompletos(){
+        System.out.println(clienteDTO);
+        if (tipoCoberturaComboBox.getValue() == null || fechaInicioDatePicker.getValue() == null || formaDePagoComboBox.getValue() == null || provinciaComboBox.getValue() == null || localidadComboBox.getValue() == null
+            || marcaComboBox.getValue() == null || modeloComboBox.getValue()==null || añoVehiculoTextfield.getText() == null || motorVehiculoTextfield.getText() == null || chasisVehiculoTextfield.getText() == null ||
+                patenteVehiculoTextfield.getText() == null || kmsPorAñoTextField.getText() == null || siniestrosTextField.getText() == null || clienteDTO.getApellido() == null) {
+
+            this.showError("Completar los campos faltantes de la poliza.");
+            return false;
+        }
+        else return true;
+
     }
 
     public void verFormulario(){
         if(!this.altaPolizaAnchorPane.isVisible()) {
             this.altaPolizaAnchorPane.setVisible(true);
         }
+    }
 
+    public void volverDeConfirmacion(){
+        this.confirmacionAnchorPane.setVisible(false);
+        this.formularioAnchorPane.setVisible(true);
+        this.altaPolizaAnchorPane.setVisible(false);
     }
 
 
@@ -246,30 +269,75 @@ public class AltaPolizaController implements Initializable {
         vehiculoDTO.setChasis(Integer.valueOf(this.chasisVehiculoTextfield.getText()));
         vehiculoDTO.setPatente(this.patenteVehiculoTextfield.getText());
         vehiculoDTO.setMotor(Integer.valueOf(this.motorVehiculoTextfield.getText()));
+        vehiculoDTO.setAño(Integer.valueOf(this.añoVehiculoTextfield.getText()));
 
         vehiculoDTO.setMarca(this.marcaComboBox.getValue().getMarca());
         vehiculoDTO.setModelo(this.modeloComboBox.getValue().getModelo());
 
         List<MedidaDeSeguridadDTO> lista = new ArrayList<>();
-
+        List<Integer> integerList = new ArrayList<>();
         if(this.alarmaCheckBox.isSelected()){
-            lista.add(new MedidaDeSeguridadDTO("Alarma"));
+            integerList.add(1);
         }
         if(this.garageCheckBox.isSelected()){
             lista.add(new MedidaDeSeguridadDTO("Garage"));
+            integerList.add(2);
         }
         if(this.rastreoCheckBox.isSelected()){
             lista.add(new MedidaDeSeguridadDTO("Rastreo"));
+            integerList.add(3);
         }
         if(this.tuercasCheckBox.isSelected()){
             lista.add(new MedidaDeSeguridadDTO("Tuercas"));
+            integerList.add(4);
         }
 
         vehiculoDTO.setMedidaDeSeguridadDTOList(lista);
+        vehiculoDTO.setMedidas_id(integerList);
     return vehiculoDTO;
     }
 
+        public List<CuotaDTO> crearCuotasDTO(Float monto, FormaPago formaPago){
+        LocalDate fecha_vencimiento = this.fechaInicioDatePicker.getValue().plusDays(-1);
+        List<CuotaDTO> list = new ArrayList<>();
+                if(formaPago.equals(FormaPago.SEMESTRAL)){
+                    CuotaDTO cuotaDTO = new CuotaDTO();
+                    cuotaDTO.setFecha_vencimiento(java.sql.Date.valueOf(fecha_vencimiento));;
+                    cuotaDTO.setMonto(monto);
+                    list.add(cuotaDTO);
+                }
+                else{
+                    Float precio_x_cuota = monto/6;
+                    for(int i = 0 ; i<6 ; i++){
+                        CuotaDTO cuotaDTO = new CuotaDTO();
+                        cuotaDTO.setFecha_vencimiento(java.sql.Date.valueOf(fecha_vencimiento.plusMonths(i)));
+                        cuotaDTO.setMonto(precio_x_cuota);
+                        list.add(cuotaDTO);
+                    }
 
+                }
+            return list;
+        }
+
+        public void showError(String s){
+            Notifications notificationBuilder= Notifications.create()
+                    .title("Error")
+                    .text(s)
+                    .graphic(null)
+                    .hideAfter(Duration.seconds(5))
+                    .position(Pos.BOTTOM_RIGHT);
+            notificationBuilder.showError();
+        }
+
+    public void notificarExito(String s){
+        Notifications notificationBuilder= Notifications.create()
+                .title("Notificacion")
+                .text(s)
+                .graphic(null)
+                .hideAfter(Duration.seconds(5))
+                .position(Pos.BOTTOM_RIGHT);
+        notificationBuilder.showConfirm();
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

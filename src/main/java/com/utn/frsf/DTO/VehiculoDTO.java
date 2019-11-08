@@ -8,9 +8,27 @@ public class VehiculoDTO {
     private String patente;
     private Integer id_modelo;
     private List<MedidaDeSeguridadDTO> medidaDeSeguridadDTOList;
+    private List<Integer> medidas_id;
     private String marca;
     private String modelo;
     private Integer motor;
+    private Integer año;
+
+    public Integer getAño() {
+        return año;
+    }
+
+    public void setAño(Integer año) {
+        this.año = año;
+    }
+
+    public List<Integer> getMedidas_id() {
+        return medidas_id;
+    }
+
+    public void setMedidas_id(List<Integer> medidas_id) {
+        this.medidas_id = medidas_id;
+    }
 
     public Integer getMotor() {
         return motor;
@@ -85,6 +103,7 @@ public class VehiculoDTO {
                 ", patente='" + patente + '\'' +
                 ", id_modelo=" + id_modelo +
                 ", medidaDeSeguridadDTOList=" + medidaDeSeguridadDTOList +
+                 ", id_medida" + medidas_id +
                 '}';
     }
 }

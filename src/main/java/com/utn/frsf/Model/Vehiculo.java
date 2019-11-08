@@ -20,6 +20,9 @@ public class Vehiculo {
     @Column(name = "patente",nullable = false)
     private   String patente;
 
+    @Column(name="año",nullable = false)
+    private Integer año;
+
     @JoinColumn(name = "fk_modelo")
     @ManyToOne(cascade=CascadeType.ALL)
     private Modelo modelo;
@@ -76,5 +79,16 @@ public class Vehiculo {
 
     public void setMedidasDeSeguridad(List<MedidaDeSeguridad> medidasDeSeguridad) {
         this.medidasDeSeguridad = medidasDeSeguridad;
+    }
+
+    public Integer getAño() {
+        return año;
+    }
+
+    public void setAño(Integer año) {
+        this.año = año;
+    }
+
+    public Vehiculo() {
     }
 }

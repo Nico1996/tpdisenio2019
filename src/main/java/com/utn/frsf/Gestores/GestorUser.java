@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class GestorUser {
@@ -24,9 +23,8 @@ public class GestorUser {
     }
 
     public boolean existsUserByUsernameAndPassword(String username, String password){
-        User user = userDAO.findClientByUsernameAndPassword(username,password);
-        System.out.println(user.toString());
-        if(user==null){
+
+        if(userDAO.findUserByUsernameAndPassword(username,password)==null){
             return false;
         }
         else return true;

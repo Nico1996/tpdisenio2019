@@ -1,9 +1,13 @@
 package com.utn.frsf.Controllers;
 
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
 import com.utn.frsf.DTO.ClienteDTO;
+import com.utn.frsf.DTO.CuotaDTO;
 import com.utn.frsf.DTO.PolizaDTO;
 import com.utn.frsf.DTO.VehiculoDTO;
+import com.utn.frsf.Gestores.GestorPoliza;
 import com.utn.frsf.TPDisenio;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -63,8 +67,14 @@ public class ConfirmacionPolizaController implements Initializable {
     @FXML
     private JFXTextField descuentosResumenTextField;
 
+    @FXML
+    private JFXTextArea textAreaConfirmacion;
+
+    @FXML
+    private JFXButton cancelarAltaPolizaButton;
+
     @Autowired
-    DashboardProdSegurosController dashboardProdSegurosController;
+    AltaPolizaController altaPolizaController;
 
     public void setDatos(PolizaDTO polizaDTO, VehiculoDTO vehiculoDTO, ClienteDTO clienteDTO){
         this.apellidoResumenTextField.setText(clienteDTO.getApellido());
@@ -85,12 +95,42 @@ public class ConfirmacionPolizaController implements Initializable {
         this.descuentosResumenTextField.setText(polizaDTO.getPremio().toString());
         this.montoResumenTextField.setText(polizaDTO.getMonto_total().toString());
 
-        System.out.println(polizaDTO);
+        this.textAreaConfirmacion.setText(polizaDTO.getCuotaDTOList().toString());
+
+        StringBuilder fieldContent = new StringBuilder("");
+        for (CuotaDTO c : polizaDTO.getCuotaDTOList())
+        {
+            Integer numeroCuota = polizaDTO.getCuotaDTOList().indexOf(c)+1;
+            fieldContent.append("Cuota Nº"+numeroCuota.toString()+": "+c.toString()+"\n");
+        }
+        textAreaConfirmacion.setText(fieldContent.toString());
+        textAreaConfirmacion.requestFocus();
+        this.polizaDTO = polizaDTO;
 
     }
+    private PolizaDTO polizaDTO;
+
+    @Autowired
+    GestorPoliza gestorPoliza;
+
+    @FXML
+    private JFXButton confirmarAltaPolizaButton;
+
+    @FXML
+    private void confirmarAltaPolizaButtonPressed(){
+        gestorPoliza.altaPoliza(this.polizaDTO);
+    }
+
+    @FXML
+    private void cancelarAltaPolizaButtonPressed(){
+        this.altaPolizaController.volverDeConfirmacion();
+    }
+
+
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-       // this.asd.setText("asd");
+        this.polizaDTO = new PolizaDTO();
     }
 }

@@ -58,10 +58,11 @@ public class AbmHijosController implements Initializable {
 
     @FXML
     public void agregarHijoButtonPressed(){
-        Date asd = java.sql.Date.valueOf(fechaNacimientoHijoDatePicker.getValue());
+
         if(sexoHijoComboBox.getValue()!=null && estadoCivilHijoComboBox.getValue()!=null && fechaNacimientoHijoDatePicker.getValue()!= null)
         {
-            HijoDTO hijoDTO = new HijoDTO(sexoHijoComboBox.getValue(), asd, estadoCivilHijoComboBox.getValue());
+            Date fecha = java.sql.Date.valueOf(fechaNacimientoHijoDatePicker.getValue());
+            HijoDTO hijoDTO = new HijoDTO(sexoHijoComboBox.getValue(), fecha, estadoCivilHijoComboBox.getValue());
             hijosTableView.getItems().add(hijoDTO);
             altaPolizaController.addHijoDTO(hijoDTO);
             this.sexoHijoComboBox.setValue(null);
@@ -69,6 +70,9 @@ public class AbmHijosController implements Initializable {
             this.fechaNacimientoHijoDatePicker.setValue(null);
             System.out.println(hijosTableView.getItems());
             hijosTableView.refresh();
+        }
+        else{
+            altaPolizaController.showError("Completar los campos faltantes del hijo.");
         }
 
     }
