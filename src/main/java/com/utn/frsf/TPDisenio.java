@@ -38,7 +38,7 @@ public class TPDisenio extends Application {
             primaryStage.setHeight(bounds.getHeight());
 
             primaryStage.requestFocus();
-            System.out.println(bounds.getWidth()+ "x" + bounds.getHeight());
+
 
         primaryStage.show();
     }

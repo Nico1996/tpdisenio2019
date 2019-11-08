@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="buscarClienteAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="543.0" style="-fx-border-color: ffce73; -fx-background-color: #6F706F; -fx-border-width: 0.35 0.35 0.35 0.35;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.BuscarClienteController">
+<AnchorPane fx:id="buscarClienteAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="543.0" style="-fx-border-color: ffce73; -fx-background-color: #6F706F; -fx-border-width: 0.35 0.35 0.35 0.35;" visible="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.utn.frsf.Controllers.BuscarClienteController">
    <children>
       <AnchorPane layoutX="42.0" layoutY="287.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="461.0">
          <children>
@@ -38,7 +38,7 @@
                   <JFXTextField fx:id="buscarNroClienteTextfield" focusColor="#ffce73" promptText="Número de Cliente" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
                   <JFXTextField fx:id="buscarApellidoTextfield" focusColor="#ffce73" promptText="Apellido" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
                   <JFXTextField fx:id="buscarNombreTextfield" focusColor="#ffce73" promptText="Nombre" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
-                  <JFXComboBox fx:id="buscarTipoDniComboBox" focusColor="#ffce73" labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="Tipo de Documento" style="-fx-prompt-text-fill: #a3a3a3;" stylesheets="@../css/asd.css" unFocusColor="#a3a3a3" />
+                  <JFXComboBox fx:id="buscarTipoDniComboBox" focusColor="#ffce73" labelFloat="true" prefHeight="25.0" prefWidth="175.0" promptText="Tipo de Documento" style="-fx-prompt-text-fill: #a3a3a3;" stylesheets="@../css/combobox.css" unFocusColor="#a3a3a3" />
                   <JFXTextField fx:id="buscarNroDocumentoTextfield" focusColor="#ffce73" promptText="Número de Documento" style="-fx-prompt-text-fill: #a3a3a3; -fx-text-fill: white;" unFocusColor="#a3a3a3" />
                </children>
             </VBox>

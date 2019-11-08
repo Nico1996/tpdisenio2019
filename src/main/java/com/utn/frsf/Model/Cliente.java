@@ -12,52 +12,71 @@ public class Cliente {
     @Column(name = "id_cliente")
     private Integer id_cliente;
 
-    @Column(name = "tipo_dni",nullable = false)
+    @Column(name = "tipo_dni")
     @Enumerated(EnumType.STRING)
     private TipoDocumento tipoDocumento;
 
-    @Column(name = "cuit_cuil", nullable = false)
+    @Column(name = "cuit_cuil")
     private Long cuil_cuit;
 
-    @Column(name = "nro_cliente",nullable = false)
-    private Long nro_cliente;
+    @Column(name = "nro_cliente")
+    private Integer nro_cliente;
 
-    @Column(name = "nro_documento", nullable = false)
+    @Column(name = "nro_documento")
     private Long nro_documento;
 
-    @Column(name = "condicion_iva",nullable = false)
+    @Column(name = "condicion_iva")
     @Enumerated(EnumType.STRING)
     private CondicionIva condicionIva;
 
-    @Column(name = "apellido",nullable = false)
+    @Column(name = "apellido")
     private String apellido;
 
-    @Column(name = "nombre",nullable = false)
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "cantidad_siniestros",nullable = false)
+    @Column(name = "cantidad_siniestros")
     private Integer cantidad_siniestro;
 
-    @Column(name = "estado_cliente",nullable = false)
+    @Column(name = "estado_cliente")
     @Enumerated(EnumType.STRING)
     private EstadoCliente estadoCliente;
 
-    @Column(name = "sexo", nullable = false)
+    @Column(name = "sexo")
     @Enumerated(EnumType.STRING)
     private Sexo sexo;
 
-    @Column(name = "mail",nullable = false)
+    @Column(name = "mail")
     private String mail;
 
-    @Column(name = "estado_civil",nullable = false)
+    @Column(name = "estado_civil")
     @Enumerated(EnumType.STRING)
     private EstadoCivil estadoCivil;
 
-    @Column(name = "profesion",nullable = false)
+    @Column(name = "profesion")
     private String profesion;
 
-    @Column(name="año_registro", nullable = false)
+    @Column(name="año_registro")
     private Integer año_registro;
+
+    @ManyToOne
+    @JoinColumn(name="fk_direccion")
+    private Direccion direccion;
+
+    @ManyToOne
+    private Poliza poliza;
+
+    public Poliza getPoliza() {
+        return poliza;
+    }
+
+    public void setPoliza(Poliza poliza) {
+        this.poliza = poliza;
+    }
+
+
+    public Cliente() {
+    }
 
     public Integer getId_cliente() {
         return id_cliente;
@@ -161,5 +180,29 @@ public class Cliente {
 
     public void setAño_registro(Integer año_registro) {
         this.año_registro = año_registro;
+    }
+
+    public Integer getNro_cliente() {
+        return nro_cliente;
+    }
+
+    public void setNro_cliente(Integer nro_cliente) {
+        this.nro_cliente = nro_cliente;
+    }
+
+    public Long getNro_documento() {
+        return nro_documento;
+    }
+
+    public void setNro_documento(Long nro_documento) {
+        this.nro_documento = nro_documento;
+    }
+
+    public Direccion getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
     }
 }
